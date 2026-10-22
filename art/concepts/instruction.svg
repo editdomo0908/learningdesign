@@ -1,0 +1,139 @@
+<!-- Vector artwork: canvas settings, definitions and drawing elements. -->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 640 400">
+  <defs>
+    <pattern
+      id="grid"
+      width="32"
+      height="32"
+      patternUnits="userSpaceOnUse">
+      <path
+        d="M32 0H0V32"
+        fill="none"
+        stroke="#1e2d58"
+        stroke-opacity=".045" />
+    </pattern>
+  </defs>
+  <rect
+    width="640"
+    height="400"
+    fill="#dff8f5" />
+  <rect
+    width="640"
+    height="400"
+    fill="url(#grid)" />
+  <path
+    d="M67 300H570"
+    stroke="#1e2d58"
+    stroke-opacity=".17"
+    stroke-width="2" />
+  <g transform="rotate(-9 190 177)">
+    <rect
+      x="68"
+      y="83"
+      width="229"
+      height="192"
+      rx="8"
+      fill="#ffffff"
+      stroke="#1e2d58"
+      stroke-width="2" />
+    <path
+      d="M84 109H281M84 249H281"
+      stroke="#1e2d58"
+      stroke-width="2" />
+    <g fill="#92cbd5">
+      <rect
+        x="91"
+        y="94"
+        width="10"
+        height="6" />
+      <rect
+        x="114"
+        y="94"
+        width="10"
+        height="6" />
+      <rect
+        x="137"
+        y="94"
+        width="10"
+        height="6" />
+    </g>
+    <rect
+      x="100"
+      y="131"
+      width="164"
+      height="97"
+      rx="4"
+      fill="#00a9a0" />
+    <path
+      d="M128 179h101M128 196h70"
+      stroke="#ffffff"
+      stroke-width="5"
+      stroke-linecap="round" />
+    <circle
+      cx="237"
+      cy="148"
+      r="7"
+      fill="#ff6c88" />
+  </g>
+  <g transform="rotate(8 449 164)">
+    <rect
+      x="327"
+      y="65"
+      width="229"
+      height="192"
+      rx="8"
+      fill="#ffffff"
+      stroke="#1e2d58"
+      stroke-width="2" />
+    <path
+      d="M343 91H540M343 231H540"
+      stroke="#1e2d58"
+      stroke-width="2" />
+    <rect
+      x="359"
+      y="112"
+      width="164"
+      height="97"
+      rx="4"
+      fill="#ff6c88" />
+    <path
+      d="M396 141h89M396 157h63M396 173h78"
+      stroke="#ffffff"
+      stroke-width="5"
+      stroke-linecap="round" />
+  </g>
+  <rect
+    x="192"
+    y="151"
+    width="252"
+    height="172"
+    rx="8"
+    fill="#1e2d58" />
+  <rect
+    x="204"
+    y="163"
+    width="228"
+    height="148"
+    rx="3"
+    fill="#3e5bff" />
+  <path
+    d="m292 194 67 43-67 43z"
+    fill="#ffffff" />
+  <path
+    d="M210 351H431"
+    stroke="#6fa7bd"
+    stroke-width="3"
+    stroke-linecap="round" />
+  <path
+    d="M210 351H317"
+    stroke="#1e2d58"
+    stroke-width="3"
+    stroke-linecap="round" />
+  <circle
+    cx="317"
+    cy="351"
+    r="7"
+    fill="#ff6c88" />
+</svg>

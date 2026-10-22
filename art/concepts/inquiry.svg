@@ -1,0 +1,77 @@
+<!-- Vector artwork: canvas settings, definitions and drawing elements. -->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 640 400">
+  <defs>
+    <pattern
+      id="grid"
+      width="32"
+      height="32"
+      patternUnits="userSpaceOnUse">
+      <path
+        d="M32 0H0V32"
+        fill="none"
+        stroke="#1e2d58"
+        stroke-opacity=".045" />
+    </pattern>
+  </defs>
+  <rect
+    width="640"
+    height="400"
+    fill="#eae5ff" />
+  <rect
+    width="640"
+    height="400"
+    fill="url(#grid)" />
+  <path
+    d="M76 94H298V229H169L134 261V229H76Z"
+    fill="#ffffff"
+    stroke="#1e2d58"
+    stroke-width="2"
+    transform="rotate(-5 185 160)" />
+  <path
+    d="M108 129h142M108 148h123M108 167h147M108 186h92"
+    stroke="#879bce"
+    stroke-width="4"
+    stroke-linecap="round" />
+  <path
+    d="M226 150H464V292H424V320L388 292H226Z"
+    fill="#3e5bff" />
+  <path
+    d="M260 184h161M260 206h127M260 228h160M260 250h98"
+    stroke="#ffffff"
+    stroke-opacity=".75"
+    stroke-width="4"
+    stroke-linecap="round" />
+  <circle
+    cx="426"
+    cy="163"
+    r="69"
+    fill="#ffffff"
+    fill-opacity=".88"
+    stroke="#1e2d58"
+    stroke-width="12" />
+  <path
+    d="m476 214 61 62"
+    stroke="#1e2d58"
+    stroke-width="22"
+    stroke-linecap="round" />
+  <path
+    d="M400 142h21v25h-13l-6 16h-10l8-20zm32 0h21v25h-13l-6 16h-10l8-20z"
+    fill="#ff6c88" />
+  <circle
+    cx="111"
+    cy="308"
+    r="10"
+    fill="#ff6c88" />
+  <circle
+    cx="141"
+    cy="308"
+    r="10"
+    fill="#00a9a0" />
+  <circle
+    cx="171"
+    cy="308"
+    r="10"
+    fill="#3e5bff" />
+</svg>

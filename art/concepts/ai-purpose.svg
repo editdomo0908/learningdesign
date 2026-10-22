@@ -1,0 +1,132 @@
+<!-- Vector artwork: canvas settings, definitions and drawing elements. -->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 640 400">
+  <defs>
+    <pattern
+      id="grid"
+      width="32"
+      height="32"
+      patternUnits="userSpaceOnUse">
+      <path
+        d="M32 0H0V32"
+        fill="none"
+        stroke="#1e2d58"
+        stroke-opacity=".045" />
+    </pattern>
+  </defs>
+  <rect
+    width="640"
+    height="400"
+    fill="#f0e6ff" />
+  <rect
+    width="640"
+    height="400"
+    fill="url(#grid)" />
+  <g
+    fill="#00a9a0"
+    opacity=".35">
+    <rect
+      x="77"
+      y="97"
+      width="63"
+      height="13"
+      rx="5" />
+    <rect
+      x="156"
+      y="97"
+      width="19"
+      height="13"
+      rx="5" />
+    <rect
+      x="83"
+      y="129"
+      width="25"
+      height="13"
+      rx="5" />
+    <rect
+      x="124"
+      y="129"
+      width="70"
+      height="13"
+      rx="5" />
+    <rect
+      x="65"
+      y="165"
+      width="55"
+      height="13"
+      rx="5" />
+    <rect
+      x="137"
+      y="165"
+      width="25"
+      height="13"
+      rx="5" />
+    <rect
+      x="80"
+      y="202"
+      width="64"
+      height="13"
+      rx="5" />
+    <rect
+      x="159"
+      y="202"
+      width="36"
+      height="13"
+      rx="5" />
+    <rect
+      x="66"
+      y="239"
+      width="22"
+      height="13"
+      rx="5" />
+    <rect
+      x="104"
+      y="239"
+      width="64"
+      height="13"
+      rx="5" />
+    <rect
+      x="83"
+      y="276"
+      width="62"
+      height="13"
+      rx="5" />
+  </g>
+  <path
+    d="M236 79H515V275H414L366 320V275H236Z"
+    fill="#ffffff"
+    stroke="#1e2d58"
+    stroke-width="3" />
+  <path
+    d="M288 116H459M288 134H425"
+    stroke="#bfcced"
+    stroke-width="4"
+    stroke-linecap="round" />
+  <circle
+    cx="374"
+    cy="204"
+    r="45"
+    fill="#3e5bff" />
+  <path
+    d="M360 190c0-15 30-19 31 0 0 11-16 12-16 23"
+    fill="none"
+    stroke="#ffffff"
+    stroke-width="5"
+    stroke-linecap="round" />
+  <circle
+    cx="375"
+    cy="228"
+    r="3.5"
+    fill="#ff6c88" />
+  <circle
+    cx="542"
+    cy="113"
+    r="14"
+    fill="#ff6c88" />
+  <circle
+    cx="534"
+    cy="298"
+    r="9"
+    fill="#00a9a0" />
+</svg>

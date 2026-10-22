@@ -1,0 +1,207 @@
+<!doctype html>
+<html
+  lang="en"
+  data-theme="dark">
+  <!-- DOCUMENT HEAD: metadata, initial theme and styles -->
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1" />
+    <script>
+      // Choose the initial theme before the page is painted.
+      (() => {
+        let t;
+        try {
+          t = localStorage.getItem('edit-portfolio-theme');
+        } catch (e) {}
+        if (t !== 'light' && t !== 'dark') {
+          const h = new Date().getHours();
+          t = h >= 7 && h < 17 ? 'light' : 'dark';
+        }
+        document.documentElement.dataset.theme = t;
+      })();
+    </script>
+    <title>Accessibility | Edit Domoszlai</title>
+    <meta
+      name="description"
+      content="Accessibility features, known limitations and contact information for Edit Domoszlai’s portfolio." />
+    <link
+      rel="icon"
+      href="favicon.svg"
+      type="image/svg+xml" />
+    <!-- STYLESHEETS: shared styles first, page styles and accessibility overrides last -->
+    <link
+      rel="stylesheet"
+      href="css/site.css" />
+    <link
+      rel="stylesheet"
+      href="css/accessibility.css" />
+  </head>
+  <body
+    id="top"
+    class="project-page accessibility-page">
+    <a
+      class="skip-link"
+      href="#main">Skip to content</a>
+    <!-- SITE HEADER: home link, main navigation and theme controls -->
+    <header class="site-header">
+      <div class="header-inner shell">
+        <a
+          class="brand"
+          href="index.html"
+          aria-label="Edit Domoszlai, home">Edit Domoszlai</a>
+        <nav
+          id="site-navigation"
+          aria-label="Main navigation">
+          <a href="index.html#work">Work</a>
+          <a href="research/index.html">Notes</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+        <div class="header-controls">
+          <button
+            class="theme-toggle"
+            type="button"
+            aria-label="Switch to light mode"
+            aria-pressed="false">
+            <span
+              aria-hidden="true"
+              class="theme-icon">☼</span>
+          </button>
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Open menu"
+            aria-controls="site-navigation"
+            aria-expanded="false">
+            <span class="menu-label">Menu</span><span
+              aria-hidden="true"
+              class="menu-lines"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- FALLBACK: navigation remains available when JavaScript is disabled -->
+    <noscript><style>
+        .site-header {
+          position: static;
+        }
+        .header-controls {
+          display: none;
+        }
+        .site-header nav {
+          position: static;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: 8px 20px;
+          padding: 8px 0;
+          border: 0;
+          visibility: visible;
+          opacity: 1;
+          pointer-events: auto;
+        }
+        .site-header nav a {
+          border: 0;
+          padding: 8px 0;
+        }
+      </style></noscript>
+    <!-- MAIN CONTENT -->
+    <main
+      id="main"
+      tabindex="-1">
+      <div class="wrap detail">
+        <a
+          class="back-link"
+          href="index.html">← BACK TO HOME</a>
+        <div class="detail-heading">
+          <p class="kicker">USING THIS PORTFOLIO</p>
+          <h1>Accessibility<span class="period">.</span></h1>
+          <p class="case-lead">
+            This portfolio is being improved toward WCAG 2.2 Level AA. This page describes the
+            support available and the gaps that remain.
+          </p>
+        </div>
+        <div class="accessibility-prose">
+          <!-- SECTION: Using the site -->
+          <section>
+            <h2>Using the site</h2>
+            <ul>
+              <li>
+                Use Tab and Shift + Tab to move between links and controls. Activate buttons with
+                Enter or Space, and links with Enter.
+              </li>
+              <li>The first keyboard link skips the header and moves to the main content.</li>
+              <li>
+                On smaller screens, the menu button opens navigation. Escape closes it and returns
+                focus to the menu button.
+              </li>
+              <li>
+                In the learning goal matcher, use Up and Down arrows, Home and End to choose a
+                desktop tab. On smaller screens, use the labelled dropdown. The selected methods
+                appear below.
+              </li>
+              <li>
+                The theme control switches between light and dark colours. Reduced-motion
+                preferences from your device are respected.
+              </li>
+            </ul>
+          </section>
+
+          <!-- SECTION: Media and known limitations -->
+          <section>
+            <h2>Media and known limitations</h2>
+            <p>
+              Silent portfolio walkthroughs have expandable text descriptions. The
+              instructional-video excerpt contains audio and does not yet have a supplied caption
+              track or a full transcript. Its short written overview is not a replacement for
+              captions.
+            </p>
+            <p>
+              The Storyline player has not had a full accessibility review. The separately hosted
+              feedback course and third-party websites are outside this portfolio review.
+            </p>
+          </section>
+
+          <!-- SECTION: Review scope -->
+          <section>
+            <h2>Review scope</h2>
+            <p>
+              Work on this site uses the
+              <a href="https://www.w3.org/TR/WCAG22/">WCAG 2.2 accessibility guidelines</a> as a
+              reference. Automated checks and keyboard checks support the review, but do not replace
+              evaluation with screen readers and disabled users. Full conformance has not been
+              established.
+            </p>
+            <p>Last reviewed: <time datetime="2026-10-21">21 October 2026</time>.</p>
+          </section>
+
+          <!-- SECTION: Report an accessibility problem -->
+          <section>
+            <h2>Report an accessibility problem</h2>
+            <p>
+              Email <a href="mailto:edit.domoszlai@gmail.com">edit.domoszlai@gmail.com</a> with the
+              page and the action that caused difficulty. If a video is inaccessible, you can
+              request an alternative format.
+            </p>
+          </section>
+        </div>
+      </div>
+    </main>
+    <!-- SITE FOOTER: copyright, accessibility and back to top -->
+    <footer class="site-footer shell">
+      <span>© <span data-year>2026</span> Edit Domoszlai</span>
+      <nav
+        class="footer-links"
+        aria-label="Footer">
+        <a href="accessibility.html">Accessibility</a>
+        <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
+      </nav>
+    </footer>
+    <!-- PAGE SCRIPTS: shared interactions and optional page features -->
+    <script
+      src="js/site.js"
+      defer></script>
+  </body>
+</html>

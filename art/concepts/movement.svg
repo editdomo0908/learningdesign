@@ -1,0 +1,87 @@
+<!-- Vector artwork: canvas settings, definitions and drawing elements. -->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 640 400">
+  <defs>
+    <pattern
+      id="grid"
+      width="32"
+      height="32"
+      patternUnits="userSpaceOnUse">
+      <path
+        d="M32 0H0V32"
+        fill="none"
+        stroke="#1e2d58"
+        stroke-opacity=".045" />
+    </pattern>
+  </defs>
+  <rect
+    width="640"
+    height="400"
+    fill="#f5e5ff" />
+  <rect
+    width="640"
+    height="400"
+    fill="url(#grid)" />
+  <path
+    d="M79 326H567"
+    stroke="#1e2d58"
+    stroke-opacity=".16"
+    stroke-width="2" />
+  <path
+    d="M105 214C167 97 244 77 304 164S418 304 525 128"
+    fill="none"
+    stroke="#3e5bff"
+    stroke-width="28"
+    stroke-linecap="round" />
+  <path
+    d="M105 214C189 256 216 323 317 297S413 123 525 251"
+    fill="none"
+    stroke="#00a9a0"
+    stroke-width="28"
+    stroke-linecap="round" />
+  <path
+    d="M105 214C232 240 256 115 344 112S454 142 525 179"
+    fill="none"
+    stroke="#ff6c88"
+    stroke-width="28"
+    stroke-linecap="round" />
+  <circle
+    cx="105"
+    cy="214"
+    r="30"
+    fill="#ffffff"
+    stroke="#1e2d58"
+    stroke-width="3" />
+  <path
+    d="M93 214h24M105 202v24"
+    stroke="#1e2d58"
+    stroke-width="3"
+    stroke-linecap="round" />
+  <circle
+    cx="525"
+    cy="128"
+    r="18"
+    fill="#ffffff"
+    stroke="#3e5bff"
+    stroke-width="5" />
+  <circle
+    cx="525"
+    cy="251"
+    r="18"
+    fill="#ffffff"
+    stroke="#00a9a0"
+    stroke-width="5" />
+  <circle
+    cx="525"
+    cy="179"
+    r="18"
+    fill="#ffffff"
+    stroke="#ff6c88"
+    stroke-width="5" />
+  <path
+    d="M179 83l10-18M378 322l18 9M468 82l18-8"
+    stroke="#1e2d58"
+    stroke-width="3"
+    stroke-linecap="round" />
+</svg>

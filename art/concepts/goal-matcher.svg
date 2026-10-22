@@ -1,0 +1,85 @@
+<!-- Vector artwork: canvas settings, definitions and drawing elements. -->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 640 400">
+  <defs>
+    <pattern
+      id="grid"
+      width="32"
+      height="32"
+      patternUnits="userSpaceOnUse">
+      <path
+        d="M32 0H0V32"
+        fill="none"
+        stroke="#1e2d58"
+        stroke-opacity=".045" />
+    </pattern>
+  </defs>
+  <rect
+    width="640"
+    height="400"
+    fill="#dbf5fa" />
+  <rect
+    width="640"
+    height="400"
+    fill="url(#grid)" />
+  <path
+    d="M166 208H289M351 208H456M320 176V103"
+    fill="none"
+    stroke="#1e2d58"
+    stroke-width="3" />
+  <circle
+    cx="155"
+    cy="208"
+    r="59"
+    fill="#ffffff"
+    stroke="#1e2d58"
+    stroke-width="2" />
+  <circle
+    cx="155"
+    cy="208"
+    r="34"
+    fill="none"
+    stroke="#ff6c88"
+    stroke-width="7" />
+  <circle
+    cx="155"
+    cy="208"
+    r="11"
+    fill="#ff6c88" />
+  <path
+    d="m320 158 50 50-50 50-50-50z"
+    fill="#3e5bff" />
+  <path
+    d="M302 207h36M320 190v36"
+    stroke="#ffffff"
+    stroke-width="3"
+    stroke-linecap="round" />
+  <rect
+    x="277"
+    y="65"
+    width="86"
+    height="54"
+    rx="5"
+    fill="#ff6c88" />
+  <path
+    d="M292 82h54M292 96h39"
+    stroke="#ffffff"
+    stroke-width="3"
+    stroke-linecap="round" />
+  <path
+    d="M445 157h77v110h-77z"
+    fill="#ffffff"
+    stroke="#1e2d58"
+    stroke-width="2" />
+  <path
+    d="M457 177h52M457 193h52M457 209h52M457 225h37"
+    stroke="#00a9a0"
+    stroke-width="4"
+    stroke-linecap="round" />
+  <path
+    d="M124 306h62M279 306h82M448 306h75"
+    stroke="#84b5cb"
+    stroke-width="3"
+    stroke-linecap="round" />
+</svg>

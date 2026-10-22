@@ -1,0 +1,104 @@
+<!-- Vector artwork: canvas settings, definitions and drawing elements. -->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 640 400">
+  <defs>
+    <pattern
+      id="grid"
+      width="32"
+      height="32"
+      patternUnits="userSpaceOnUse">
+      <path
+        d="M32 0H0V32"
+        fill="none"
+        stroke="#1e2d58"
+        stroke-opacity=".045" />
+    </pattern>
+  </defs>
+  <rect
+    width="640"
+    height="400"
+    fill="#e4ebff" />
+  <rect
+    width="640"
+    height="400"
+    fill="url(#grid)" />
+  <rect
+    x="138"
+    y="74"
+    width="323"
+    height="240"
+    rx="7"
+    fill="#3e5bff"
+    opacity=".15"
+    transform="rotate(-9 300 200)" />
+  <rect
+    x="170"
+    y="73"
+    width="323"
+    height="240"
+    rx="7"
+    fill="#00a9a0"
+    opacity=".24"
+    transform="rotate(6 330 190)" />
+  <path
+    d="M168 64H432L480 112V326H168Z"
+    fill="#ffffff"
+    stroke="#1e2d58"
+    stroke-width="2" />
+  <path
+    d="M432 64V112H480"
+    fill="#cfdbff"
+    stroke="#1e2d58"
+    stroke-width="2" />
+  <path
+    d="M200 144H261L306 196H353M200 196H353M200 248H261L306 196M353 196H407"
+    fill="none"
+    stroke="#1e2d58"
+    stroke-width="3"
+    stroke-linejoin="round" />
+  <circle
+    cx="200"
+    cy="144"
+    r="10"
+    fill="#ff6c88" />
+  <circle
+    cx="200"
+    cy="196"
+    r="10"
+    fill="#00a9a0" />
+  <circle
+    cx="200"
+    cy="248"
+    r="10"
+    fill="#3e5bff" />
+  <rect
+    x="327"
+    y="165"
+    width="79"
+    height="62"
+    rx="5"
+    fill="#3e5bff" />
+  <path
+    d="M344 182H390M344 195H390M344 208H376"
+    stroke="#ffffff"
+    stroke-width="3"
+    stroke-linecap="round" />
+  <path
+    d="M199 287H298M199 300H263"
+    stroke="#b4c4ec"
+    stroke-width="3"
+    stroke-linecap="round" />
+  <circle
+    cx="455"
+    cy="287"
+    r="31"
+    fill="#ff6c88" />
+  <path
+    d="m441 288 9 9 18-22"
+    fill="none"
+    stroke="#ffffff"
+    stroke-width="4"
+    stroke-linecap="round"
+    stroke-linejoin="round" />
+</svg>

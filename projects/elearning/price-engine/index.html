@@ -1,0 +1,240 @@
+<!doctype html>
+<html
+  lang="en"
+  data-theme="dark">
+  <!-- DOCUMENT HEAD: metadata, initial theme and styles -->
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1" />
+    <script>
+      // Choose the initial theme before the page is painted.
+      (() => {
+        let t;
+        try {
+          t = localStorage.getItem('edit-portfolio-theme');
+        } catch (e) {}
+        if (t !== 'light' && t !== 'dark') {
+          const h = new Date().getHours();
+          t = h >= 7 && h < 17 ? 'light' : 'dark';
+        }
+        document.documentElement.dataset.theme = t;
+      })();
+    </script>
+    <title>Price Engine for Customer Service | Edit Domoszlai</title>
+    <meta
+      name="description"
+      content="Try a published Articulate Storyline course on investigating and responding to customer pricing questions." />
+    <link
+      rel="icon"
+      href="../../../favicon.svg"
+      type="image/svg+xml" />
+    <!-- STYLESHEETS: shared styles first, page styles and accessibility overrides last -->
+    <link
+      rel="stylesheet"
+      href="../../../css/site.css" />
+    <link
+      rel="stylesheet"
+      href="../../../css/learning-projects.css" />
+    <link
+      rel="stylesheet"
+      href="../../../css/accessibility.css" />
+  </head>
+  <body
+    id="top"
+    class="project-page">
+    <a
+      class="skip-link"
+      href="#main">Skip to content</a>
+
+    <!-- SITE HEADER: home link, main navigation and theme controls -->
+    <header class="site-header">
+      <div class="header-inner shell">
+        <a
+          class="brand"
+          href="../../../index.html"
+          aria-label="Edit Domoszlai, home">Edit Domoszlai</a>
+        <nav
+          id="site-navigation"
+          aria-label="Main navigation">
+          <a
+            href="../../../index.html#work"
+            aria-current="page">Work</a>
+          <a href="../../../research/index.html">Notes</a>
+          <a href="../../../index.html#about">About</a>
+          <a href="../../../index.html#contact">Contact</a>
+        </nav>
+        <div class="header-controls">
+          <button
+            class="theme-toggle"
+            type="button"
+            aria-label="Switch to light mode"
+            aria-pressed="false">
+            <span
+              aria-hidden="true"
+              class="theme-icon">☼</span>
+          </button>
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Open menu"
+            aria-controls="site-navigation"
+            aria-expanded="false">
+            <span class="menu-label">Menu</span><span
+              aria-hidden="true"
+              class="menu-lines"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- FALLBACK: navigation remains available when JavaScript is disabled -->
+    <noscript><style>
+        .site-header {
+          position: static;
+        }
+        .header-controls {
+          display: none;
+        }
+        .site-header nav {
+          position: static;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: 8px 20px;
+          padding: 8px 0;
+          border: 0;
+          visibility: visible;
+          opacity: 1;
+          pointer-events: auto;
+        }
+        .site-header nav a {
+          border: 0;
+          padding: 8px 0;
+        }
+      </style></noscript>
+    <!-- MAIN CONTENT -->
+    <main
+      id="main"
+      tabindex="-1">
+      <div class="wrap detail">
+        <a
+          class="back-link"
+          href="../index.html">← ARTICULATE PROJECTS</a>
+        <div class="detail-heading">
+          <p class="kicker">01 / E-LEARNING / ARTICULATE STORYLINE</p>
+          <h1>Price Engine for Customer Service<span class="period">.</span></h1>
+          <p class="case-lead">
+            A scenario-based course for the Customer Service team, focused on investigating and
+            explaining pricing questions.
+          </p>
+          <p class="status-note"><span></span>Portfolio course · Ready to try</p>
+        </div>
+
+        <!-- PROJECT DETAILS: scope and role -->
+        <div class="case-facts">
+          <div>
+            <span>PROJECT</span><strong>Customer pricing scenario · Published Storyline course</strong>
+          </div>
+          <div><span>ROLE</span><strong>Learning design · interaction design</strong></div>
+        </div>
+
+        <!-- CASE STUDY: explanation and supporting media -->
+        <div class="case-brief">
+          <div class="case-story">
+            <!-- SECTION: Practice a customer decision -->
+            <section>
+              <span>01 / PROBLEM</span>
+              <h2>Practice a customer decision</h2>
+              <p>
+                Knowing pricing terms is different from responding well when a customer sees a price
+                they do not understand. Customer Service teams need to decide what to check and how
+                to explain what they find.
+              </p>
+            </section>
+
+            <!-- SECTION: Investigate before choosing a response -->
+            <section>
+              <span>02 / RESPONSE</span>
+              <h2>Investigate before choosing a response</h2>
+              <p>
+                The course introduces the pricing flow, checks understanding and then presents a
+                customer pricing question. Learners investigate the case, make response choices and
+                receive feedback through the Storyline interactions.
+              </p>
+            </section>
+
+            <!-- SECTION: A course ready to explore -->
+            <section>
+              <span>03 / RESULT</span>
+              <h2>A course ready to explore</h2>
+              <p>
+                The 10-slide course is published for the web and can be tried in its original
+                Articulate Storyline player. It is a portfolio learning project.
+              </p>
+            </section>
+          </div>
+
+          <!-- PROJECT MEDIA AND TOOLS -->
+          <div class="case-media">
+            <!-- SECTION: The Pricing Flow -->
+            <section
+              class="course-demo"
+              aria-labelledby="pricing-demo-title">
+              <img
+                src="../../../art/concepts/decisions.svg"
+                alt=""
+                width="640"
+                height="400"
+                decoding="async" />
+              <div class="course-demo-copy">
+                <p class="project-category">ARTICULATE STORYLINE</p>
+                <h2 id="pricing-demo-title">The Pricing Flow</h2>
+                <p>
+                  Explore the pricing process, check your understanding and work through a customer
+                  case.
+                </p>
+                <a
+                  class="button button-primary"
+                  href="../../../courses/the-pricing-flow/story.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Try the course (opens in a new tab)">Try the course <span aria-hidden="true">↗</span></a><span class="course-new-tab">10 slides · Opens in a new tab</span>
+              </div>
+            </section>
+
+            <!-- SUPPORTING CONTENT: Tools & methods -->
+            <aside class="case-tools">
+              <h2 id="tools-elearning">Tools &amp; methods</h2>
+              <ul class="tool-list">
+                <li>Articulate Storyline</li>
+                <li>storyboard</li>
+                <li>scenario design</li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+
+        <!-- NEXT PROJECT -->
+        <a
+          class="next-project"
+          href="../feedback/index.html"><span>NEXT LEARNING PROJECT</span><strong>The feedback conversation</strong><b aria-hidden="true">↗</b></a>
+      </div>
+    </main>
+
+    <!-- SITE FOOTER: copyright, accessibility and back to top -->
+    <footer class="site-footer shell">
+      <span>© <span data-year>2026</span> Edit Domoszlai</span>
+      <nav
+        class="footer-links"
+        aria-label="Footer">
+        <a href="../../../accessibility.html">Accessibility</a>
+        <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
+      </nav>
+    </footer>
+    <!-- PAGE SCRIPTS: shared interactions and optional page features -->
+    <script
+      src="../../../js/site.js"
+      defer></script>
+  </body>
+</html>

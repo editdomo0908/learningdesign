@@ -1,0 +1,117 @@
+<!-- Vector artwork: canvas settings, definitions and drawing elements. -->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 640 400">
+  <defs>
+    <pattern
+      id="grid"
+      width="32"
+      height="32"
+      patternUnits="userSpaceOnUse">
+      <path
+        d="M32 0H0V32"
+        fill="none"
+        stroke="#1e2d58"
+        stroke-opacity=".045" />
+    </pattern>
+  </defs>
+  <rect
+    width="640"
+    height="400"
+    fill="#ffe6f0" />
+  <rect
+    width="640"
+    height="400"
+    fill="url(#grid)" />
+  <rect
+    x="94"
+    y="62"
+    width="244"
+    height="268"
+    rx="3"
+    fill="#1e2d58"
+    transform="rotate(-5 215 196)" />
+  <g transform="rotate(-5 215 196)">
+    <path
+      d="M113 84H316V287H113Z"
+      fill="#3e5bff" />
+    <path
+      d="M214 84a101 101 0 0 0 0 202V235a50 50 0 0 1 0-100z"
+      fill="#ffffff" />
+    <path
+      d="M214 84h102v101H214z"
+      fill="#ff6c88" />
+    <path
+      d="M214 185h102v102H214z"
+      fill="#00a9a0" />
+    <path
+      d="M118 307h112M250 307h61"
+      stroke="#ffffff"
+      stroke-width="3" />
+  </g>
+  <rect
+    x="361"
+    y="82"
+    width="182"
+    height="95"
+    rx="4"
+    fill="#ffffff"
+    stroke="#1e2d58"
+    stroke-width="2" />
+  <circle
+    cx="398"
+    cy="130"
+    r="19"
+    fill="#ff6c88" />
+  <path
+    d="M435 115H520M435 130H508M435 145H484"
+    stroke="#1e2d58"
+    stroke-width="3"
+    stroke-linecap="round" />
+  <rect
+    x="361"
+    y="198"
+    width="84"
+    height="97"
+    rx="4"
+    fill="#00a9a0" />
+  <path
+    d="M371 247a32 32 0 0 1 64 0h-32v32a32 32 0 0 1-32-32"
+    fill="#ffffff" />
+  <rect
+    x="459"
+    y="198"
+    width="84"
+    height="97"
+    rx="4"
+    fill="#3e5bff" />
+  <circle
+    cx="501"
+    cy="247"
+    r="25"
+    fill="#ffffff" />
+  <path
+    d="M501 222v50a25 25 0 0 0 0-50"
+    fill="#ff6c88" />
+  <rect
+    x="370"
+    y="319"
+    width="38"
+    height="17"
+    rx="2"
+    fill="#1e2d58" />
+  <rect
+    x="417"
+    y="319"
+    width="38"
+    height="17"
+    rx="2"
+    fill="#3e5bff" />
+  <rect
+    x="464"
+    y="319"
+    width="38"
+    height="17"
+    rx="2"
+    fill="#ff6c88" />
+</svg>

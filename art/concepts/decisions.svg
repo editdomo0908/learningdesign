@@ -1,0 +1,103 @@
+<!-- Vector artwork: canvas settings, definitions and drawing elements. -->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 640 400">
+  <defs>
+    <pattern
+      id="grid"
+      width="32"
+      height="32"
+      patternUnits="userSpaceOnUse">
+      <path
+        d="M32 0H0V32"
+        fill="none"
+        stroke="#1e2d58"
+        stroke-opacity=".045" />
+    </pattern>
+  </defs>
+  <rect
+    width="640"
+    height="400"
+    fill="#e1f2ff" />
+  <rect
+    width="640"
+    height="400"
+    fill="url(#grid)" />
+  <path
+    d="M181 199H305C352 199 342 105 395 105H456M305 199C353 199 342 292 395 292H456"
+    fill="none"
+    stroke="#3e5bff"
+    stroke-width="22"
+    stroke-linecap="round" />
+  <rect
+    x="88"
+    y="123"
+    width="137"
+    height="149"
+    rx="8"
+    fill="#b9d7ec"
+    transform="rotate(-8 157 197)" />
+  <rect
+    x="92"
+    y="115"
+    width="137"
+    height="149"
+    rx="8"
+    fill="#ffffff"
+    stroke="#1e2d58"
+    stroke-width="2"
+    transform="rotate(-8 157 189)" />
+  <path
+    d="M139 165c0-18 37-23 38 0 1 14-20 15-20 29"
+    fill="none"
+    stroke="#1e2d58"
+    stroke-width="7"
+    stroke-linecap="round" />
+  <circle
+    cx="157"
+    cy="216"
+    r="4"
+    fill="#ff6c88" />
+  <g transform="rotate(7 465 105)">
+    <rect
+      x="400"
+      y="52"
+      width="134"
+      height="109"
+      rx="7"
+      fill="#00a9a0" />
+    <path
+      d="M426 85h79M426 103h63M426 121h45"
+      stroke="#ffffff"
+      stroke-width="4"
+      stroke-linecap="round" />
+  </g>
+  <g transform="rotate(-6 465 288)">
+    <rect
+      x="400"
+      y="239"
+      width="134"
+      height="109"
+      rx="7"
+      fill="#ff6c88" />
+    <path
+      d="M426 271h79M426 289h63M426 307h45"
+      stroke="#ffffff"
+      stroke-width="4"
+      stroke-linecap="round" />
+  </g>
+  <path
+    d="M374 331C307 366 250 350 238 299"
+    fill="none"
+    stroke="#1e2d58"
+    stroke-width="2.5"
+    stroke-dasharray="5 7"
+    stroke-linecap="round" />
+  <path
+    d="m230 308 7-14 13 8"
+    fill="none"
+    stroke="#1e2d58"
+    stroke-width="2.5"
+    stroke-linecap="round"
+    stroke-linejoin="round" />
+</svg>

@@ -1,0 +1,303 @@
+<!doctype html>
+<html
+  lang="en"
+  data-theme="dark">
+  <!-- DOCUMENT HEAD: metadata, initial theme and styles -->
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1" />
+    <script>
+      // Choose the initial theme before the page is painted.
+      (() => {
+        let t;
+        try {
+          t = localStorage.getItem('edit-portfolio-theme');
+        } catch (e) {}
+        if (t !== 'light' && t !== 'dark') {
+          const h = new Date().getHours();
+          t = h >= 7 && h < 17 ? 'light' : 'dark';
+        }
+        document.documentElement.dataset.theme = t;
+      })();
+    </script>
+    <title>AI, white noise and avatars | Edit Domoszlai</title>
+    <meta
+      name="description"
+      content="Learning design, documentation, digital projects and research by Edit Domoszlai." />
+    <link
+      rel="icon"
+      href="../../favicon.svg"
+      type="image/svg+xml" />
+    <!-- STYLESHEETS: shared styles first, page styles and accessibility overrides last -->
+    <link
+      rel="stylesheet"
+      href="../../css/site.css" />
+    <link
+      rel="stylesheet"
+      href="../../css/accessibility.css" />
+  </head>
+  <body
+    id="top"
+    class="article-page">
+    <a
+      class="skip-link"
+      href="#main">Skip to content</a>
+
+    <!-- SITE HEADER: home link, main navigation and theme controls -->
+    <header class="site-header">
+      <div class="header-inner shell">
+        <a
+          class="brand"
+          href="../../index.html"
+          aria-label="Edit Domoszlai, home">Edit Domoszlai</a>
+        <nav
+          id="site-navigation"
+          aria-label="Main navigation">
+          <a href="../../index.html#work">Work</a>
+          <a
+            href="../../research/index.html"
+            aria-current="page">Notes</a>
+          <a href="../../index.html#about">About</a>
+          <a href="../../index.html#contact">Contact</a>
+        </nav>
+        <div class="header-controls">
+          <button
+            class="theme-toggle"
+            type="button"
+            aria-label="Switch to light mode"
+            aria-pressed="false">
+            <span
+              aria-hidden="true"
+              class="theme-icon">☼</span>
+          </button>
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Open menu"
+            aria-controls="site-navigation"
+            aria-expanded="false">
+            <span class="menu-label">Menu</span><span
+              aria-hidden="true"
+              class="menu-lines"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- FALLBACK: navigation remains available when JavaScript is disabled -->
+    <noscript><style>
+        .site-header {
+          position: static;
+        }
+        .header-controls {
+          display: none;
+        }
+        .site-header nav {
+          position: static;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: 8px 20px;
+          padding: 8px 0;
+          border: 0;
+          visibility: visible;
+          opacity: 1;
+          pointer-events: auto;
+        }
+        .site-header nav a {
+          border: 0;
+          padding: 8px 0;
+        }
+      </style></noscript>
+    <!-- MAIN CONTENT -->
+    <main
+      id="main"
+      tabindex="-1">
+      <div class="research-shell">
+        <!-- SITE HEADER: home link, main navigation and theme controls -->
+        <header class="research-intro">
+          <a
+            class="research-back"
+            href="../index.html">← Notes</a>
+          <p class="kicker">Essay / AI and learning design · Draft for review</p>
+          <h1>AI, white noise and avatars<span class="period">.</span></h1>
+          <p class="lead">
+            What happens when producing learning content becomes easier than deciding whether it is
+            worth producing?
+          </p>
+        </header>
+        <div class="research-content">
+          <article class="research-prose">
+            <!-- SECTION: When content becomes noise -->
+            <section id="noise">
+              <h2>When content becomes noise</h2>
+              <p>
+                It is increasingly easy to produce a learning video: a script, a synthetic voice, an
+                animated presenter, a few slides. The output can look finished long before anyone
+                has established what a learner should be able to do afterwards.
+              </p>
+              <p>
+                Here, “AI white noise” describes a potential problem of volume and repetition: more
+                explanations, summaries and media competing for attention without adding much
+                understanding. This is a working metaphor, not a scientific term or a diagnosis of
+                all AI-produced material.
+              </p>
+              <p>
+                A 2025 mixed-methods study of science-education videos screened 1,082 clips from
+                YouTube and TikTok and classified 57 (5.3%) as probably low-quality AI-generated
+                material. The authors identified problems such as misleading explanations and
+                disorganised presentation. The finding supports caution in that sample; it does not
+                establish how prevalent poor AI content is across all learning platforms.
+                <a
+                  href="https://doi.org/10.2196/80084"
+                  rel="noopener noreferrer"
+                  target="_blank">Study ↗</a>
+              </p>
+            </section>
+
+            <!-- SECTION: What is the avatar doing? -->
+            <section id="avatars">
+              <h2>What is the avatar doing?</h2>
+              <p>
+                A presenter can create social cues, draw attention to relevant information or offer
+                guidance. Equally, a talking face can occupy screen space while repeating material
+                the learner could read more quickly.
+              </p>
+              <p>
+                The evidence is more nuanced than “avatars work” or “avatars distract”. A 2025
+                meta-analysis of 33 experimental studies found positive effects of social cues in
+                AI-powered pedagogical agents on cognitive, affective and behavioural outcomes; it
+                found no statistically detectable overall effect on cognitive load. Another 2025
+                meta-analysis, covering 24 studies, found a small or negligible overall reduction in
+                cognitive load from pedagogical agents. These studies encompass different forms of
+                agents, not only synthetic video presenters.
+                <a
+                  href="https://www.sciencedirect.com/science/article/pii/S1747938X25000831"
+                  rel="noopener noreferrer"
+                  target="_blank">Social-cues review ↗</a>
+                ·
+                <a
+                  href="https://doi.org/10.3389/fpsyg.2025.1635465"
+                  rel="noopener noreferrer"
+                  target="_blank">Cognitive-load review ↗</a>
+              </p>
+              <p>
+                For instructional design, the useful question is what the avatar contributes to the
+                learning task. It might guide a novice through a complex procedure, model a
+                conversation or give feedback. Simply reading bullet points aloud is a much weaker
+                justification.
+              </p>
+            </section>
+
+            <!-- SECTION: Design questions before production -->
+            <section id="decisions">
+              <h2>Design questions before production</h2>
+              <ul>
+                <li>Is the learning goal to recognise, explain, practise or decide?</li>
+                <li>
+                  What does the spoken or visual element add that text or a demonstration does not?
+                </li>
+                <li>Will learners have to retrieve, apply or evaluate anything?</li>
+                <li>Could removing the avatar make the material easier to follow?</li>
+                <li>How will learning be checked after the content is viewed?</li>
+              </ul>
+              <p>
+                A 2025 research article on generative AI and load-reduction instruction argues for
+                scaffolding, feedback, structured practice and independent problem-solving. It is a
+                theoretical instructional framework, not a trial proving that a particular
+                production format is superior.
+                <a
+                  href="https://doi.org/10.1016/j.lindif.2025.102723"
+                  rel="noopener noreferrer"
+                  target="_blank">Read the paper ↗</a>
+              </p>
+            </section>
+
+            <!-- SECTION: Production is not instructional design -->
+            <section id="perspective">
+              <h2>Production is not instructional design</h2>
+              <p>
+                AI-generated video and synthetic presenters have legitimate uses, including rapid
+                revisions, multilingual versions and scenarios where an actor is impractical. The
+                risk appears when visual polish is used as a proxy for educational value.
+              </p>
+              <p>
+                Technology changes what is easy to produce. Designers still have to decide what
+                deserves to be taught, what practice is necessary, and which parts of the experience
+                should demand the learner's own thinking.
+              </p>
+              <p class="research-small">
+                Editorial status: working article draft. The term “AI white noise” is used here as a
+                metaphor; cited findings should not be read as proof that every AI video or avatar
+                harms learning.
+              </p>
+            </section>
+            <div
+              class="research-studies"
+              id="sources">
+              <h2>References</h2>
+              <ol>
+                <li>
+                  2025 ·
+                  <a
+                    href="https://doi.org/10.2196/80084"
+                    rel="noopener noreferrer"
+                    target="_blank">AI-Generated “Slop” in Online Biomedical Science Educational Videos</a>. JMIR Medical Education. Mixed-methods sample; limited generalisation.
+                </li>
+                <li>
+                  2025 ·
+                  <a
+                    href="https://www.sciencedirect.com/science/article/pii/S1747938X25000831"
+                    rel="noopener noreferrer"
+                    target="_blank">Effects of social cues of artificial intelligence-powered pedagogical agents</a>. Educational Research Review. Meta-analysis, 33 experiments.
+                </li>
+                <li>
+                  2025 ·
+                  <a
+                    href="https://doi.org/10.3389/fpsyg.2025.1635465"
+                    rel="noopener noreferrer"
+                    target="_blank">The facts about the effects of pedagogical agents on learners’ cognitive
+                    load</a>. Frontiers in Psychology. Meta-analysis, 24 studies.
+                </li>
+                <li>
+                  2025 ·
+                  <a
+                    href="https://doi.org/10.1016/j.lindif.2025.102723"
+                    rel="noopener noreferrer"
+                    target="_blank">Integrating generative AI and load reduction instruction to individualize and
+                    optimize students' learning</a>. Learning and Individual Differences. Instructional framework.
+                </li>
+              </ol>
+            </div>
+          </article>
+
+          <!-- SUPPORTING CONTENT: Related navigation and resources -->
+          <aside
+            aria-label="On this page"
+            class="research-sidebar">
+            <strong>In this article</strong><a href="#noise">AI white noise</a><a href="#avatars">AI avatars</a><a href="#decisions">Design questions</a><a href="#perspective">Perspective</a><a href="#sources">References</a>
+          </aside>
+        </div>
+        <div class="related">
+          <a href="../index.html">← All notes</a><a href="../dissertation/index.html">Related: authoring tools &amp; design decisions →</a>
+        </div>
+      </div>
+    </main>
+
+    <!-- SITE FOOTER: copyright, accessibility and back to top -->
+    <footer class="site-footer shell">
+      <span>© <span data-year>2026</span> Edit Domoszlai</span>
+      <nav
+        class="footer-links"
+        aria-label="Footer">
+        <a href="../../accessibility.html">Accessibility</a>
+        <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
+      </nav>
+    </footer>
+    <!-- PAGE SCRIPTS: shared interactions and optional page features -->
+    <script
+      src="../../js/site.js"
+      defer></script>
+  </body>
+</html>

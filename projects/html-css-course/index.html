@@ -1,0 +1,390 @@
+<!doctype html>
+<html
+  lang="en"
+  data-theme="dark">
+  <!-- DOCUMENT HEAD: metadata, initial theme and styles -->
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1" />
+    <script>
+      // Choose the initial theme before the page is painted.
+      (() => {
+        let t;
+        try {
+          t = localStorage.getItem('edit-portfolio-theme');
+        } catch (e) {}
+        if (t !== 'light' && t !== 'dark') {
+          const h = new Date().getHours();
+          t = h >= 7 && h < 17 ? 'light' : 'dark';
+        }
+        document.documentElement.dataset.theme = t;
+      })();
+    </script>
+    <title>HTML &amp; CSS for academic staff | Edit Domoszlai</title>
+    <meta
+      name="description"
+      content="A UCL course-design project: a 20-hour blended HTML and CSS course for academic staff using Canvas, informed by learner analysis and peer feedback." />
+    <link
+      rel="icon"
+      href="../../favicon.svg"
+      type="image/svg+xml" />
+    <!-- STYLESHEETS: shared styles first, page styles and accessibility overrides last -->
+    <link
+      rel="stylesheet"
+      href="../../css/site.css" />
+    <link
+      rel="stylesheet"
+      href="../../css/course-design.css" />
+    <link
+      rel="stylesheet"
+      href="../../css/accessibility.css" />
+  </head>
+  <body
+    id="top"
+    class="project-page course-design-page">
+    <a
+      class="skip-link"
+      href="#main">Skip to content</a>
+
+    <!-- SITE HEADER: home link, main navigation and theme controls -->
+    <header class="site-header">
+      <div class="header-inner shell">
+        <a
+          class="brand"
+          href="../../index.html"
+          aria-label="Edit Domoszlai, home">Edit Domoszlai</a>
+        <nav
+          id="site-navigation"
+          aria-label="Main navigation">
+          <a
+            href="../../index.html#work"
+            aria-current="page">Work</a>
+          <a href="../../research/index.html">Notes</a>
+          <a href="../../index.html#about">About</a>
+          <a href="../../index.html#contact">Contact</a>
+        </nav>
+        <div class="header-controls">
+          <button
+            class="theme-toggle"
+            type="button"
+            aria-label="Switch to light mode"
+            aria-pressed="false">
+            <span
+              aria-hidden="true"
+              class="theme-icon">☼</span>
+          </button>
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Open menu"
+            aria-controls="site-navigation"
+            aria-expanded="false">
+            <span class="menu-label">Menu</span><span
+              aria-hidden="true"
+              class="menu-lines"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- FALLBACK: navigation remains available when JavaScript is disabled -->
+    <noscript><style>
+        .site-header {
+          position: static;
+        }
+        .header-controls {
+          display: none;
+        }
+        .site-header nav {
+          position: static;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: 8px 20px;
+          padding: 8px 0;
+          border: 0;
+          visibility: visible;
+          opacity: 1;
+          pointer-events: auto;
+        }
+        .site-header nav a {
+          border: 0;
+          padding: 8px 0;
+        }
+      </style></noscript>
+
+    <!-- MAIN CONTENT -->
+    <main
+      id="main"
+      tabindex="-1">
+      <div class="wrap detail">
+        <a
+          class="back-link"
+          href="../../index.html#work">← ALL PROJECTS</a>
+
+        <!-- SECTION: HTML & CSS for academic staff. -->
+        <section
+          class="course-hero"
+          id="overview"
+          aria-labelledby="course-title">
+          <div class="detail-heading">
+            <p class="kicker">06 / LEARNING DESIGN / UCL COURSEWORK</p>
+            <h1 id="course-title">
+              HTML &amp; CSS for academic staff<span class="period">.</span>
+            </h1>
+            <p class="case-lead">
+              A blended course plan to help academic staff use HTML and CSS with confidence, and
+              apply those skills to their learning content in Canvas.
+            </p>
+            <p class="course-role">
+              <strong>My role</strong> Learner analysis · Course planning · Reflective evaluation
+            </p>
+            <p class="course-status">Course design · First episode reviewed by two peers</p>
+          </div>
+          <figure class="course-hero-art">
+            <img
+              src="../../art/concepts/html-css-course.svg"
+              alt=""
+              width="640"
+              height="400"
+              decoding="async" />
+          </figure>
+        </section>
+        <dl class="course-facts">
+          <div>
+            <dt>Duration</dt>
+            <dd>20 hours over 3 weeks</dd>
+          </div>
+          <div>
+            <dt>Target cohort</dt>
+            <dd>20 academic staff</dd>
+          </div>
+          <div>
+            <dt>Format</dt>
+            <dd>Blended professional learning</dd>
+          </div>
+        </dl>
+        <nav
+          class="course-section-nav"
+          aria-label="Case study sections">
+          <a href="#learners">Learners &amp; context</a>
+          <a href="#course-journey">Course design</a>
+          <a href="#peer-review">Peer review</a>
+          <a href="#design-notes">Reflection</a>
+        </nav>
+
+        <!-- SECTION: Make code relevant to everyday teaching. -->
+        <section
+          class="case-section"
+          id="learners"
+          aria-labelledby="learners-title">
+          <div class="case-section-heading">
+            <p class="kicker">01 / LEARNERS &amp; CONTEXT</p>
+            <h2 id="learners-title">Make code relevant to everyday teaching.</h2>
+          </div>
+          <div class="case-section-body">
+            <p>
+              The proposed learners already used Canvas, but were beginners in HTML, CSS and code
+              editors. Their confidence and previous exposure to technology varied. I wanted the
+              design to make room for that difference and connect new skills to a practical goal:
+              greater control over their own teaching materials.
+            </p>
+            <p>
+              Voluntary professional learning also needs to fit around existing work. Three live
+              workshops offered timely explanation and support, while independent activities allowed
+              practice at the learner’s own pace. Time was included for becoming familiar with the
+              tools before tackling more demanding tasks.
+            </p>
+          </div>
+        </section>
+
+        <!-- SECTION: Build from guided practice to application. -->
+        <section
+          class="case-section"
+          id="course-journey"
+          aria-labelledby="journey-title">
+          <div class="case-section-heading">
+            <p class="kicker">02 / COURSE DESIGN</p>
+            <h2 id="journey-title">Build from guided practice to application.</h2>
+          </div>
+          <div class="case-section-body">
+            <div class="course-format">
+              <h3>The proposed blend</h3>
+              <div
+                class="format-bar"
+                aria-hidden="true">
+                <span></span><span></span>
+              </div>
+              <p class="format-labels">
+                <span><strong>12 hours live</strong>Three 4-hour Saturday workshops</span><span><strong>8 hours independent</strong>Activities between sessions</span>
+              </p>
+            </div>
+            <h3>Scaffold the move towards independence</h3>
+            <p>
+              Demonstrations and code-along exercises introduce syntax with an immediately visible
+              result in the browser. I used scaffolding to manage cognitive load: examples and
+              guided practice precede more open-ended tasks (Laurillard, 2012). Learners gradually
+              extend a shared “AI in Education” information page, then use that progression as a
+              model for a page on a personally relevant topic and its application in Canvas.
+            </p>
+            <h3>Distinguish practice from production</h3>
+            <p>
+              Even a short piece of HTML produces something visible, so these learning activities
+              overlap. I classified them by purpose: practice develops familiarity with syntax;
+              production applies that knowledge to a defined task. Investigation adds a different
+              demand, such as finding faults in a document and explaining how nesting affects its
+              structure.
+            </p>
+            <h3>Assess more than correct syntax</h3>
+            <p>
+              The plan combines quizzes on syntax and meaning with teacher and peer feedback on
+              learners’ pages. The editor and browser provide intrinsic feedback through the visible
+              results of code; teacher and peer feedback broadens this to structure, layout and
+              alternative solutions. A private reflective blog supports learners in considering
+              their progress and confidence.
+            </p>
+          </div>
+        </section>
+
+        <!-- SECTION: Use feedback to question the balance. -->
+        <section
+          class="case-section"
+          id="peer-review"
+          aria-labelledby="review-title">
+          <div class="case-section-heading">
+            <p class="kicker">03 / PEER REVIEW</p>
+            <h2 id="review-title">Use feedback to question the balance.</h2>
+          </div>
+          <div class="case-section-body">
+            <p>
+              Two peers reviewed the first learning episode. They valued the independent learning
+              opportunities and the choice of Slack for support. Their questions about the emphasis
+              on practice, the variety of activities and the sources of feedback prompted specific
+              responses in my reflection.
+            </p>
+            <table class="feedback-table">
+              <caption class="sr-only">
+                Peer feedback and the proposed design responses
+              </caption>
+              <thead>
+                <tr>
+                  <th scope="col">Peer observation</th>
+                  <th scope="col">Design response</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">More investigation</th>
+                  <td>
+                    Add faulty HTML and CSS documents for learners to analyse before receiving
+                    automatic feedback, focusing on syntax, nesting and page structure.
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">More varied activities</th>
+                  <td>
+                    Have small groups turn a basic document into a complete page, combining
+                    technical decisions with creative choices.
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Feedback beyond the editor</th>
+                  <td>
+                    Use teacher and peer comments, including exchanges in Slack, to discuss layout,
+                    structure and the reasoning behind different solutions.
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">More focused outcomes</th>
+                  <td>
+                    Refine the number and wording of the outcomes, and clarify what a finished page
+                    should demonstrate while allowing individual expression.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <p>
+              I agreed that investigation and collaboration could be stronger, while maintaining
+              that repeated practice and production were essential to learning this subject. The
+              task was to improve the balance and purpose of the activities.
+            </p>
+          </div>
+        </section>
+
+        <!-- SECTION: Explain the choices behind the tools. -->
+        <section
+          class="case-section"
+          id="design-notes"
+          aria-labelledby="reflection-title">
+          <div class="case-section-heading">
+            <p class="kicker">04 / REFLECTION</p>
+            <h2 id="reflection-title">Explain the choices behind the tools.</h2>
+          </div>
+          <div class="case-section-body">
+            <p>
+              Canvas had a dual role: it hosted the activities and was the environment in which
+              learners would apply their skills. CodePen and Sublime offered ways to experiment with
+              code; Slack supported questions and peer exchange. Reflecting on the feedback moved my
+              attention towards how these familiar tools could support more meaningful activities.
+            </p>
+            <p>
+              The project strengthened my ability to connect learner needs, teaching methods,
+              technology and assessment. A central lesson was that immediate technical feedback is
+              only one part of a learning design: learners also need opportunities to investigate,
+              explain decisions and learn from one another.
+            </p>
+            <details class="course-references">
+              <summary>Research informing the design</summary>
+              <div>
+                <p>The written rationale drew on these sources, among others:</p>
+                <ul>
+                  <li>
+                    Laurillard (2012),
+                    <a href="https://doi.org/10.4324/9780203125083">Teaching as a Design Science</a>
+                    — learning activities, scaffolding and feedback.
+                  </li>
+                  <li>
+                    Alammary (2019),
+                    <a href="https://doi.org/10.1371/journal.pone.0221765">Blended learning models for introductory programming courses</a>
+                    — the blend of live and independent work.
+                  </li>
+                  <li>
+                    Park, Dorn and Forte (2015),
+                    <a href="https://doi.org/10.1145/2700514">An Analysis of HTML and CSS Syntax Errors in a Web Development Course</a>
+                    — syntax and nesting.
+                  </li>
+                  <li>
+                    Eiriksdottir and Catrambone (2011),
+                    <a href="https://doi.org/10.1177/0018720811419154">Procedural Instructions, Principles, and Examples</a>
+                    — guidance, examples and conceptual explanation.
+                  </li>
+                </ul>
+              </div>
+            </details>
+          </div>
+        </section>
+
+        <!-- NEXT PROJECT -->
+        <a
+          class="next-project"
+          href="../dance-teaching/index.html"><span>NEXT PROJECT</span><strong>Dance teaching and workshops</strong><b aria-hidden="true">↗</b></a>
+      </div>
+    </main>
+
+    <!-- SITE FOOTER: copyright, accessibility and back to top -->
+    <footer class="site-footer shell">
+      <span>© <span data-year>2026</span> Edit Domoszlai</span>
+      <nav
+        class="footer-links"
+        aria-label="Footer">
+        <a href="../../accessibility.html">Accessibility</a>
+        <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
+      </nav>
+    </footer>
+    <!-- PAGE SCRIPTS: shared interactions and optional page features -->
+    <script
+      src="../../js/site.js"
+      defer></script>
+  </body>
+</html>

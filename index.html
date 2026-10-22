@@ -1,0 +1,895 @@
+<!doctype html>
+<html
+  lang="en"
+  data-theme="dark">
+  <!-- DOCUMENT HEAD: metadata, initial theme and styles -->
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1" />
+    <script>
+      // Choose the initial theme before the page is painted.
+      (() => {
+        let t;
+        try {
+          t = localStorage.getItem('edit-portfolio-theme');
+        } catch (e) {}
+        if (t !== 'light' && t !== 'dark') {
+          const h = new Date().getHours();
+          t = h >= 7 && h < 17 ? 'light' : 'dark';
+        }
+        document.documentElement.dataset.theme = t;
+      })();
+    </script>
+    <title>Learning design and digital projects | Edit Domoszlai</title>
+    <meta
+      name="description"
+      content="Learning design, documentation, digital projects and research by Edit Domoszlai." />
+    <link
+      rel="icon"
+      href="favicon.svg"
+      type="image/svg+xml" />
+    <!-- STYLESHEETS: shared styles first, page styles and accessibility overrides last -->
+    <link
+      rel="stylesheet"
+      href="css/site.css" />
+    <link
+      rel="stylesheet"
+      href="css/covers.css" />
+    <link
+      rel="stylesheet"
+      href="css/approach.css" />
+    <link
+      rel="stylesheet"
+      href="css/motion.css" />
+    <link
+      rel="stylesheet"
+      href="css/accessibility.css" />
+  </head>
+  <body
+    id="top"
+    class="home-page">
+    <a
+      class="skip-link"
+      href="#main">Skip to content</a>
+
+    <!-- SITE HEADER: home link, main navigation and theme controls -->
+    <header class="site-header">
+      <div class="header-inner shell">
+        <a
+          class="brand"
+          href="index.html"
+          aria-label="Edit Domoszlai, home">Edit Domoszlai</a>
+        <nav
+          id="site-navigation"
+          aria-label="Main navigation">
+          <a href="#work">Work</a>
+          <a href="research/index.html">Notes</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="header-controls">
+          <button
+            class="theme-toggle"
+            type="button"
+            aria-label="Switch to light mode"
+            aria-pressed="false">
+            <span
+              aria-hidden="true"
+              class="theme-icon">☼</span>
+          </button>
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Open menu"
+            aria-controls="site-navigation"
+            aria-expanded="false">
+            <span class="menu-label">Menu</span><span
+              aria-hidden="true"
+              class="menu-lines"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- FALLBACK: navigation remains available when JavaScript is disabled -->
+    <noscript><style>
+        .site-header {
+          position: static;
+        }
+        .header-controls {
+          display: none;
+        }
+        .site-header nav {
+          position: static;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: 8px 20px;
+          padding: 8px 0;
+          border: 0;
+          visibility: visible;
+          opacity: 1;
+          pointer-events: auto;
+        }
+        .site-header nav a {
+          border: 0;
+          padding: 8px 0;
+        }
+      </style></noscript>
+    <!-- MAIN CONTENT -->
+    <main
+      id="main"
+      tabindex="-1">
+      <!-- SECTION: Making complexwork clear. -->
+      <section
+        class="home-hero shell"
+        aria-labelledby="intro-title">
+        <div class="hero-headline">
+          <p class="eyebrow">Learning design · Documentation · Digital content</p>
+          <h1 id="intro-title">Making complex<br />work clear.</h1>
+        </div>
+        <div class="hero-summary">
+          <p class="hero-intro">
+            My background spans dance, education and software. I use critical thinking to map
+            complex work and turn it into clear learning materials, documentation and digital
+            content.
+          </p>
+          <div class="hero-actions">
+            <a
+              class="button button-primary"
+              href="#work">Explore my work <span aria-hidden="true">↘</span></a><a
+              class="text-link"
+              href="#about">About me <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION: Projects -->
+      <section
+        class="work-section shell section-space"
+        id="work">
+        <div
+          class="section-heading"
+          data-reveal>
+          <div>
+            <p class="eyebrow">01 / Selected work</p>
+            <h2>Projects</h2>
+          </div>
+          <p>A selection of documentation, learning, research and teaching work.</p>
+        </div>
+        <div class="project-grid">
+          <!-- PROJECT CARD: Price engine process map and manual -->
+          <a
+            class="project-card"
+            data-reveal
+            href="projects/price-engine/index.html"><div class="project-copy">
+              <p class="project-category">
+                <span class="project-number">01</span> Process mapping · Documentation
+              </p>
+              <h3 id="project-title-1">Process mapping and user manual</h3>
+            </div>
+            <div class="project-preview concept-cover">
+              <img
+                src="art/concepts/workflow.svg"
+                alt=""
+                width="640"
+                height="400"
+                loading="lazy"
+                decoding="async" />
+            </div>
+            <div class="project-footer">
+              <p
+                class="project-description"
+                id="project-description-1">
+                Mapped pricing workflows across systems and created a shared user manual for
+                Product, QA and Customer Service.
+              </p>
+            </div></a>
+          <!-- PROJECT CARD: Marketplace instructional videos -->
+          <a
+            class="project-card"
+            data-reveal
+            href="projects/instructional-videos/index.html"><div class="project-copy">
+              <p class="project-category">
+                <span class="project-number">02</span> Learning design · Video
+              </p>
+              <h3 id="project-title-2">Instructional videos</h3>
+            </div>
+            <div class="project-preview concept-cover">
+              <img
+                src="art/concepts/instruction.svg"
+                alt=""
+                width="640"
+                height="400"
+                loading="lazy"
+                decoding="async" />
+            </div>
+            <div class="project-footer">
+              <p
+                class="project-description"
+                id="project-description-2">
+                Task-focused resources to help internal teams and users navigate a marketplace.
+              </p>
+            </div></a>
+          <!-- PROJECT CARD: Gradient brand and website -->
+          <a
+            class="project-card"
+            data-reveal
+            href="projects/gradient/index.html"><div class="project-copy">
+              <p class="project-category">
+                <span class="project-number">03</span> Brand identity · Web development
+              </p>
+              <h3 id="project-title-3">Brand and website development</h3>
+            </div>
+            <div class="project-preview concept-cover">
+              <img
+                src="art/concepts/identity.svg"
+                alt=""
+                width="640"
+                height="400"
+                loading="lazy"
+                decoding="async" />
+            </div>
+            <div class="project-footer">
+              <p
+                class="project-description"
+                id="project-description-3">
+                A name, visual direction and website for Gradient Contemporary Ballet Debrecen.
+              </p>
+            </div></a>
+          <!-- PROJECT CARD: Research into e-learning authoring tools -->
+          <a
+            class="project-card"
+            data-reveal
+            href="projects/research/index.html"><div class="project-copy">
+              <p class="project-category">
+                <span class="project-number">04</span> Research · Education technology
+              </p>
+              <h3 id="project-title-4">Research into e-learning authoring tools</h3>
+            </div>
+            <div class="project-preview concept-cover">
+              <img
+                src="art/concepts/inquiry.svg"
+                alt=""
+                width="640"
+                height="400"
+                loading="lazy"
+                decoding="async" />
+            </div>
+            <div class="project-footer">
+              <p
+                class="project-description"
+                id="project-description-4">
+                A UCL dissertation on designers, software choices and professional practice.
+              </p>
+            </div></a>
+          <!-- PROJECT CARD: Articulate projects -->
+          <a
+            class="project-card"
+            data-reveal
+            href="projects/elearning/index.html"><div class="project-copy">
+              <p class="project-category">
+                <span class="project-number">05</span> Learning design · Interactive courses
+              </p>
+              <h3 id="project-title-5">Articulate projects</h3>
+            </div>
+            <div class="project-preview concept-cover">
+              <img
+                src="art/concepts/articulate-projects.webp"
+                alt=""
+                width="640"
+                height="400"
+                loading="lazy"
+                decoding="async" />
+            </div>
+            <div class="project-footer">
+              <p
+                class="project-description"
+                id="project-description-5">
+                Articulate courses and browser-based simulations for workplace learning.
+              </p>
+            </div></a>
+          <!-- PROJECT CARD: HTML & CSS for academic staff -->
+          <a
+            class="project-card"
+            data-reveal
+            href="projects/html-css-course/index.html"><div class="project-copy">
+              <p class="project-category">
+                <span class="project-number">06</span> Course design · Blended learning
+              </p>
+              <h3 id="project-title-6">HTML &amp; CSS for academic staff</h3>
+            </div>
+            <div class="project-preview concept-cover">
+              <img
+                src="art/concepts/html-css-course.svg"
+                alt=""
+                width="640"
+                height="400"
+                loading="lazy"
+                decoding="async" />
+            </div>
+            <div class="project-footer">
+              <p
+                class="project-description"
+                id="project-description-6">
+                A UCL course-design project combining learner analysis, blended learning and
+                reflection on peer feedback.
+              </p>
+            </div></a>
+          <!-- PROJECT CARD: Dance teaching and workshops -->
+          <a
+            class="project-card"
+            data-reveal
+            href="projects/dance-teaching/index.html"><div class="project-copy">
+              <p class="project-category">
+                <span class="project-number">07</span> Teaching · Facilitation
+              </p>
+              <h3 id="project-title-7">Dance teaching and workshops</h3>
+            </div>
+            <div class="project-preview concept-cover">
+              <img
+                src="art/concepts/movement.svg"
+                alt=""
+                width="640"
+                height="400"
+                loading="lazy"
+                decoding="async" />
+            </div>
+            <div class="project-footer">
+              <p
+                class="project-description"
+                id="project-description-7">
+                Dance teaching informed by performance, collaboration and curiosity.
+              </p>
+            </div></a>
+        </div>
+      </section>
+
+      <!-- SECTION: Learning goal matcher -->
+      <section
+        class="research-preview shell"
+        data-reveal
+        aria-labelledby="resource-title">
+        <div class="resource-copy">
+          <p class="eyebrow">Notes on learning</p>
+          <h2 id="resource-title">Learning goal matcher</h2>
+          <p>
+            Match Storyline interaction patterns to learning goals, with links to the underlying
+            studies.
+          </p>
+          <div class="resource-actions">
+            <a
+              class="button button-secondary"
+              href="learning-interactions.html">Use the learning goal matcher <span aria-hidden="true">↗</span></a><a
+              class="text-link"
+              href="research/index.html">Explore all notes <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+        <div
+          class="resource-visual"
+          aria-hidden="true">
+          <img
+            src="art/concepts/goal-matcher.svg"
+            alt=""
+            width="640"
+            height="400"
+            loading="lazy" />
+        </div>
+      </section>
+
+      <!-- SECTION: Dance, educationand software. -->
+      <section
+        class="about-section section-space"
+        id="about">
+        <div class="shell about-layout">
+          <div
+            class="section-label"
+            data-reveal>
+            <p class="eyebrow">02 / About</p>
+            <h2>Dance, education<br />and software.</h2>
+            <a
+              class="text-link"
+              href="#approach">How I approach the work <span aria-hidden="true">↓</span></a>
+          </div>
+          <div
+            class="about-copy"
+            data-reveal>
+            <p>
+              I’m Edit Domoszlai. For much of my career I worked as a professional dancer,
+              performing with companies including Rambert in London. I knew I wanted to keep
+              learning alongside that work, so I studied while touring and later chose a part-time
+              MA in Education and Technology at UCL Institute of Education.
+            </p>
+            <p>
+              That programme brought together education, technology, interaction design and
+              research. My dissertation examined how e-learning authoring tools shape the work of
+              instructional designers and received UCL’s Exceptional Dissertation Award.
+            </p>
+            <p>
+              After returning to Hungary, I joined a software development team in QA. I investigated
+              product behaviour, documented workflows and created guidance for people using new
+              digital systems. At the same time, I developed the identity and website for Gradient
+              Contemporary Ballet Debrecen and continued teaching dance.
+            </p>
+            <p>
+              These experiences inform how I work now: I ask how a system functions, what people
+              need to understand, and which form of explanation helps them act.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION: The format follows the need. -->
+      <section
+        class="approach-section shell section-space"
+        id="approach"
+        aria-labelledby="approach-title">
+        <div
+          class="section-heading approach-heading"
+          data-reveal>
+          <div>
+            <p class="eyebrow">03 / Approach</p>
+            <h2 id="approach-title">The format follows the need.</h2>
+          </div>
+          <p>
+            I start with the audience and what they need to do, then choose the form that helps
+            them.
+          </p>
+        </div>
+        <ul
+          class="skills-thread"
+          role="list">
+          <!-- APPROACH: Analytical thinking -->
+          <li class="skill">
+            <div class="skill-top">
+              <svg
+                class="skill-visual"
+                viewBox="0 0 180 128"
+                aria-hidden="true"
+                focusable="false">
+                <circle
+                  class="art-back"
+                  cx="85"
+                  cy="64"
+                  r="52" />
+                <g
+                  fill="none"
+                  stroke-width="3"
+                  stroke-linecap="round">
+                  <path
+                    d="M21 44h49M21 64h38M21 84h49"
+                    stroke="var(--illustration-teal)" />
+                  <circle
+                    cx="21"
+                    cy="44"
+                    r="4"
+                    class="art-paper"
+                    stroke="var(--illustration-teal)" />
+                  <circle
+                    cx="21"
+                    cy="84"
+                    r="4"
+                    class="art-paper"
+                    stroke="var(--illustration-teal)" />
+                  <g class="skill-motion">
+                    <circle
+                      cx="108"
+                      cy="56"
+                      r="29"
+                      class="art-paper"
+                      stroke="var(--illustration-blue)" />
+                    <path
+                      d="m130 79 24 24"
+                      stroke="var(--illustration-blue)"
+                      stroke-width="9" />
+                    <path
+                      d="m94 59 10-14 11 21 10-15"
+                      stroke="var(--illustration-pink)"
+                      class="skill-trace"
+                      pathLength="1" />
+                  </g>
+                </g>
+              </svg>
+              <div>
+                <p class="skill-label"><span>01</span>ANALYSE</p>
+                <h3>Analytical thinking</h3>
+              </div>
+            </div>
+            <p>
+              I look closely at how something works and where people get stuck. At GG Development,
+              that meant investigating software behaviour and making the logic clear through
+              workflows and documentation.
+            </p>
+          </li>
+
+          <!-- APPROACH: Designing solutions -->
+          <li class="skill">
+            <div class="skill-top">
+              <svg
+                class="skill-visual"
+                viewBox="0 0 180 128"
+                aria-hidden="true"
+                focusable="false">
+                <circle
+                  class="art-back"
+                  cx="92"
+                  cy="64"
+                  r="52" />
+                <rect
+                  x="78"
+                  y="23"
+                  width="80"
+                  height="81"
+                  rx="7"
+                  class="art-paper art-ink"
+                  stroke-width="2" />
+                <path
+                  d="M91 84h52M91 94h29"
+                  fill="none"
+                  class="art-ink"
+                  stroke-width="2"
+                  stroke-linecap="round" />
+                <g class="skill-motion">
+                  <rect
+                    x="91"
+                    y="36"
+                    width="24"
+                    height="32"
+                    rx="3"
+                    fill="var(--illustration-blue)" />
+                  <path
+                    d="M122 36h24v32h-24z"
+                    fill="var(--illustration-teal)" />
+                  <circle
+                    cx="35"
+                    cy="37"
+                    r="14"
+                    fill="var(--illustration-pink)" />
+                  <path
+                    d="M20 75h29v29H20z"
+                    fill="var(--illustration-blue)" />
+                </g>
+                <path
+                  d="M53 62h17m-7-7 7 7-7 7"
+                  fill="none"
+                  stroke="var(--illustration-teal)"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="skill-trace"
+                  pathLength="1" />
+              </svg>
+              <div>
+                <p class="skill-label"><span>02</span>MAKE</p>
+                <h3>Designing solutions</h3>
+              </div>
+            </div>
+            <p>
+              I turn ideas into things people can use, from a website or user manual to an
+              instructional video or workshop structure. I define the purpose before choosing the
+              form.
+            </p>
+          </li>
+
+          <!-- APPROACH: Systems thinking -->
+          <li class="skill">
+            <div class="skill-top">
+              <svg
+                class="skill-visual"
+                viewBox="0 0 180 128"
+                aria-hidden="true"
+                focusable="false">
+                <circle
+                  class="art-back"
+                  cx="90"
+                  cy="64"
+                  r="52" />
+                <g
+                  fill="none"
+                  stroke-width="3">
+                  <path
+                    d="M39 33 90 64 145 30M90 64l-48 35m48-35 53 35"
+                    stroke="var(--illustration-pink)"
+                    class="skill-trace"
+                    pathLength="1" />
+                  <g class="skill-motion">
+                    <rect
+                      x="23"
+                      y="19"
+                      width="30"
+                      height="26"
+                      rx="4"
+                      class="art-paper art-ink" />
+                    <rect
+                      x="130"
+                      y="17"
+                      width="30"
+                      height="26"
+                      rx="4"
+                      class="art-paper art-ink" />
+                    <rect
+                      x="27"
+                      y="87"
+                      width="30"
+                      height="26"
+                      rx="4"
+                      class="art-paper art-ink" />
+                    <rect
+                      x="129"
+                      y="86"
+                      width="30"
+                      height="26"
+                      rx="4"
+                      class="art-paper art-ink" />
+                  </g>
+                </g>
+                <circle
+                  cx="90"
+                  cy="64"
+                  r="18"
+                  fill="var(--illustration-blue)" />
+                <path
+                  d="m82 64 6 6 12-13"
+                  fill="none"
+                  stroke="var(--surface)"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+              <div>
+                <p class="skill-label"><span>03</span>CONNECT</p>
+                <h3>Systems thinking</h3>
+              </div>
+            </div>
+            <p>
+              I trace connections between modules, decisions and people. Mapping the price engine
+              across systems helped different teams work from a shared explanation of the feature.
+            </p>
+          </li>
+
+          <!-- APPROACH: Continuous learning -->
+          <li class="skill">
+            <div class="skill-top">
+              <svg
+                class="skill-visual"
+                viewBox="0 0 180 128"
+                aria-hidden="true"
+                focusable="false">
+                <circle
+                  class="art-back"
+                  cx="88"
+                  cy="64"
+                  r="52" />
+                <path
+                  d="M53 87a44 44 0 1 1 73-5m-1-14 1 14 14-3"
+                  fill="none"
+                  stroke="var(--illustration-blue)"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="skill-trace"
+                  pathLength="1" />
+                <g class="skill-motion">
+                  <path
+                    d="M65 83V70h16V57h16V44h16"
+                    fill="none"
+                    stroke="var(--illustration-teal)"
+                    stroke-width="9"
+                    stroke-linejoin="round" />
+                  <circle
+                    cx="113"
+                    cy="44"
+                    r="7"
+                    fill="var(--illustration-pink)" />
+                </g>
+                <path
+                  d="M52 108h56"
+                  fill="none"
+                  class="art-ink"
+                  stroke-width="2"
+                  stroke-linecap="round" />
+              </svg>
+              <div>
+                <p class="skill-label"><span>04</span>DEVELOP</p>
+                <h3>Continuous learning</h3>
+              </div>
+            </div>
+            <p>
+              I studied at UCL while touring, learned front-end development by building a website,
+              and expanded into QA and business analysis support. I test ideas in practice and
+              revise what I make.
+            </p>
+          </li>
+
+          <!-- APPROACH: Audience-specific content -->
+          <li class="skill">
+            <div class="skill-top">
+              <svg
+                class="skill-visual"
+                viewBox="0 0 180 128"
+                aria-hidden="true"
+                focusable="false">
+                <circle
+                  class="art-back"
+                  cx="93"
+                  cy="64"
+                  r="52" />
+                <path
+                  d="M47 64h30m0 0V29h35M77 64h35m-35 0v35h35"
+                  fill="none"
+                  stroke="var(--illustration-teal)"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="skill-trace"
+                  pathLength="1" />
+                <rect
+                  x="19"
+                  y="45"
+                  width="32"
+                  height="38"
+                  rx="4"
+                  fill="var(--illustration-blue)" />
+                <path
+                  d="M27 56h16M27 64h16M27 72h10"
+                  stroke="var(--surface)"
+                  stroke-width="2"
+                  stroke-linecap="round" />
+                <g class="skill-motion">
+                  <rect
+                    x="112"
+                    y="15"
+                    width="40"
+                    height="27"
+                    rx="4"
+                    class="art-paper"
+                    stroke="var(--illustration-blue)"
+                    stroke-width="2" />
+                  <path
+                    d="m129 22 9 6-9 6z"
+                    fill="var(--illustration-blue)" />
+                  <rect
+                    x="112"
+                    y="51"
+                    width="40"
+                    height="27"
+                    rx="4"
+                    fill="var(--illustration-pink)" />
+                  <path
+                    d="M121 60h22M121 68h15"
+                    stroke="var(--surface)"
+                    stroke-width="2"
+                    stroke-linecap="round" />
+                  <rect
+                    x="112"
+                    y="86"
+                    width="40"
+                    height="27"
+                    rx="4"
+                    class="art-paper"
+                    stroke="var(--illustration-teal)"
+                    stroke-width="2" />
+                  <circle
+                    cx="124"
+                    cy="99"
+                    r="4"
+                    fill="var(--illustration-teal)" />
+                  <path
+                    d="M134 94h11M134 102h11"
+                    stroke="var(--illustration-teal)"
+                    stroke-width="2" />
+                </g>
+              </svg>
+              <div>
+                <p class="skill-label"><span>05</span>ADAPT</p>
+                <h3>Audience-specific content</h3>
+              </div>
+            </div>
+            <p>
+              I create manuals and diagrams for product teams, task videos for platform users, web
+              content for public audiences, and movement instructions for workshop participants. I
+              adjust the medium, language and level of detail to what each group needs to understand
+              or do.
+            </p>
+          </li>
+
+          <!-- APPROACH: Critical thinking -->
+          <li class="skill">
+            <div class="skill-top">
+              <svg
+                class="skill-visual"
+                viewBox="0 0 180 128"
+                aria-hidden="true"
+                focusable="false">
+                <circle
+                  class="art-back"
+                  cx="89"
+                  cy="64"
+                  r="52" />
+                <g
+                  fill="none"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path
+                    d="M54 34H37v61h17M128 34h17v61h-17"
+                    stroke="var(--illustration-pink)"
+                    class="skill-trace"
+                    pathLength="1" />
+                  <g class="skill-motion">
+                    <path
+                      d="M76 47c0-18 30-19 30-1 0 12-16 13-16 26"
+                      stroke="var(--illustration-blue)" />
+                    <circle
+                      cx="90"
+                      cy="83"
+                      r="3"
+                      fill="var(--illustration-blue)"
+                      stroke="var(--illustration-blue)" />
+                    <path
+                      d="m119 99 6 6 13-15"
+                      stroke="var(--illustration-teal)" />
+                  </g>
+                </g>
+              </svg>
+              <div>
+                <p class="skill-label"><span>06</span>QUESTION</p>
+                <h3>Critical thinking</h3>
+              </div>
+            </div>
+            <p>
+              My work in dance, education and software gives me several ways to examine a problem. I
+              question assumptions, look for connections and test an explanation against evidence
+              before choosing a format or solution.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- SECTION: Contact. -->
+      <section
+        class="contact-section shell section-space"
+        id="contact">
+        <div>
+          <p class="eyebrow">04 / Contact</p>
+          <h2>Contact.</h2>
+        </div>
+        <div
+          class="contact-copy"
+          data-reveal>
+          <p>For learning design, documentation or a project collaboration, get in touch.</p>
+          <a
+            class="contact-email"
+            href="mailto:edit.domoszlai@gmail.com">edit.domoszlai@gmail.com <span aria-hidden="true">↗</span></a><a
+            class="text-link"
+            href="https://www.linkedin.com/in/edit-domoszlai/"
+            target="_blank"
+            rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+          <p class="location">Budapest · Working internationally</p>
+        </div>
+      </section>
+    </main>
+
+    <!-- SITE FOOTER: copyright, accessibility and back to top -->
+    <footer class="site-footer shell">
+      <span>© <span data-year>2026</span> Edit Domoszlai</span>
+      <nav
+        class="footer-links"
+        aria-label="Footer">
+        <a href="accessibility.html">Accessibility</a>
+        <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
+      </nav>
+    </footer>
+    <!-- PAGE SCRIPTS: shared interactions and optional page features -->
+    <script
+      src="js/site.js"
+      defer></script>
+    <script
+      src="js/approach.js"
+      defer></script>
+    <script
+      src="js/motion.js"
+      defer></script>
+  </body>
+</html>

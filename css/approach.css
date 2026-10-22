@@ -1,0 +1,321 @@
+/* A shared thread connects capabilities; the alternating layout is not a chronology. */
+/* Approach colors and section spacing */
+.approach-section {
+  --illustration-blue: #3e5bff;
+  --illustration-pink: #ff6c88;
+  --illustration-teal: #00a9a0;
+  --blue-tint: #e4ebff;
+  --pink-tint: #ffe6f0;
+  --teal-tint: #dcf6f3;
+  padding-block: 74px 82px;
+}
+:root:not([data-theme='light']) .approach-section {
+  --illustration-blue: #9aaeff;
+  --illustration-pink: #ff88b7;
+  --illustration-teal: #4fe0ce;
+  --blue-tint: #24345c;
+  --pink-tint: #3e2949;
+  --teal-tint: #193e49;
+}
+.approach-heading {
+  align-items: center;
+  margin-bottom: 42px;
+}
+.approach-heading h2 {
+  max-width: 20ch;
+  font-size: clamp(1.9rem, 3vw, 2.65rem);
+}
+.approach-heading > p {
+  max-width: 37ch;
+  font-size: 0.97rem;
+  line-height: 1.85;
+}
+/* Connecting line and alternating capability layout */
+.skills-thread {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 42px 116px;
+  list-style: none;
+  margin: 0;
+  padding: 12px 0 158px;
+}
+.skills-thread::before {
+  content: '';
+  position: absolute;
+  left: calc(50% - 1px);
+  width: 2px;
+  top: 30px;
+  bottom: 8px;
+  background: var(--quiet-line);
+}
+.skill {
+  --skill-color: var(--illustration-blue);
+  --skill-tint: var(--blue-tint);
+  position: relative;
+  min-width: 0;
+  align-self: start;
+  padding: 0 0 16px;
+}
+.skill:nth-child(3n + 2) {
+  --skill-color: var(--illustration-teal);
+  --skill-tint: var(--teal-tint);
+}
+.skill:nth-child(3n) {
+  --skill-color: var(--illustration-pink);
+  --skill-tint: var(--pink-tint);
+}
+.skill:nth-child(even) {
+  top: 146px;
+}
+.skill::before {
+  content: '';
+  position: absolute;
+  right: -58px;
+  top: 56px;
+  width: 58px;
+  height: 1px;
+  background: var(--line);
+}
+.skill::after {
+  content: '';
+  position: absolute;
+  right: -65px;
+  top: 49px;
+  box-sizing: border-box;
+  width: 14px;
+  height: 14px;
+  border: 3px solid var(--skill-color);
+  border-radius: 50%;
+  background: var(--bg);
+}
+.skill:nth-child(even)::before {
+  right: auto;
+  left: -58px;
+}
+.skill:nth-child(even)::after {
+  right: auto;
+  left: -65px;
+}
+/* Capability illustrations, headings and text */
+.skill-top {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+  margin-bottom: 14px;
+  min-height: 112px;
+}
+.skill-visual {
+  width: 144px;
+  height: 104px;
+  flex: 0 0 144px;
+  overflow: visible;
+}
+.skill-visual .art-back {
+  fill: var(--skill-tint);
+}
+.skill-visual .art-ink {
+  stroke: var(--ink);
+}
+.skill-visual .art-paper {
+  fill: var(--surface);
+}
+.skill-label {
+  font-size: 0.69rem;
+  font-weight: 550;
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.skill-label span {
+  color: var(--secondary);
+  font-variant-numeric: tabular-nums;
+  margin-right: 9px;
+}
+.skill h3 {
+  margin-top: 9px;
+  font-size: clamp(1.16rem, 1.7vw, 1.42rem);
+  font-weight: 550;
+  line-height: 1.25;
+  max-width: 20ch;
+}
+.skill > p {
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.85;
+  max-width: 56ch;
+}
+/* Text is always visible. Illustrations draw into place once on entering view. */
+/* Responsive and preference rules: (prefers-reduced-motion:no-preference) */
+@media (prefers-reduced-motion: no-preference) {
+  .skill.is-visible .skill-motion {
+    animation: skill-settle 0.7s cubic-bezier(0.2, 0.7, 0.3, 1) both;
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+  .skill.is-visible .skill-trace {
+    animation: skill-trace 0.9s ease 0.12s both;
+  }
+  .skill.is-visible::after {
+    animation: skill-node 0.85s ease;
+  }
+}
+@keyframes skill-settle {
+  from {
+    opacity: 0.25;
+    transform: translateY(9px) rotate(-5deg);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) rotate(0);
+  }
+}
+@keyframes skill-trace {
+  from {
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+  }
+  to {
+    stroke-dasharray: 1;
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes skill-node {
+  0% {
+    box-shadow: 0 0 0 0 var(--skill-tint);
+  }
+  60% {
+    box-shadow: 0 0 0 10px var(--skill-tint);
+  }
+  100% {
+    box-shadow: 0 0 0 0 var(--skill-tint);
+  }
+}
+/* Responsive and preference rules: (max-width:1100px) */
+@media (max-width: 1100px) {
+  .skills-thread {
+    column-gap: 96px;
+    row-gap: 35px;
+  }
+  .skill::before {
+    right: -48px;
+    width: 48px;
+  }
+  .skill::after {
+    right: -55px;
+  }
+  .skill:nth-child(even)::before {
+    left: -48px;
+  }
+  .skill:nth-child(even)::after {
+    left: -55px;
+  }
+  .skill-top {
+    gap: 16px;
+  }
+  .skill-visual {
+    width: 120px;
+    height: 96px;
+    flex-basis: 120px;
+  }
+  .skill > p {
+    font-size: 0.92rem;
+  }
+}
+/* Responsive and preference rules: (max-width:760px) */
+@media (max-width: 760px) {
+  .approach-section {
+    padding-block: 48px 54px;
+  }
+  .approach-heading {
+    display: block;
+    margin-bottom: 30px;
+  }
+  .approach-heading > p {
+    margin-top: 18px;
+    max-width: 49ch;
+    font-size: 0.94rem;
+  }
+  .skills-thread {
+    grid-template-columns: 1fr;
+    gap: 36px;
+    padding: 0 0 8px 38px;
+  }
+  .skills-thread::before {
+    left: 5px;
+    top: 49px;
+    bottom: 20px;
+  }
+  .skill:nth-child(even) {
+    top: 0;
+  }
+  .skill::before,
+  .skill:nth-child(even)::before {
+    right: auto;
+    left: -32px;
+    width: 24px;
+    top: 52px;
+  }
+  .skill::after,
+  .skill:nth-child(even)::after {
+    right: auto;
+    left: -39px;
+    top: 45px;
+  }
+  .skill-top {
+    gap: 20px;
+    min-height: 104px;
+    margin-bottom: 10px;
+  }
+  .skill-visual {
+    width: 125px;
+    height: 100px;
+    flex-basis: 125px;
+  }
+  .skill h3 {
+    font-size: 1.3rem;
+    max-width: 24ch;
+  }
+  .skill > p {
+    font-size: 0.96rem;
+    max-width: 59ch;
+  }
+}
+/* Responsive and preference rules: (max-width:420px) */
+@media (max-width: 420px) {
+  .skills-thread {
+    padding-left: 29px;
+    gap: 30px;
+  }
+  .skills-thread::before {
+    left: 3px;
+  }
+  .skill::before,
+  .skill:nth-child(even)::before {
+    left: -25px;
+    width: 18px;
+  }
+  .skill::after,
+  .skill:nth-child(even)::after {
+    left: -32px;
+  }
+  .skill-top {
+    gap: 11px;
+  }
+  .skill-visual {
+    width: 100px;
+    height: 96px;
+    flex-basis: 100px;
+  }
+  .skill-label {
+    font-size: 0.65rem;
+    letter-spacing: 0.045em;
+  }
+  .skill-label span {
+    margin-right: 6px;
+  }
+  .skill h3 {
+    font-size: 1.16rem;
+    margin-top: 8px;
+  }
+}

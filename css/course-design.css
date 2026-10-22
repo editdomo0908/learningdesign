@@ -1,0 +1,393 @@
+/* A concise case study with visible rationale and restrained supporting visuals. */
+/* UCL course page palette */
+.course-design-page {
+  --course-teal: #55dfcb;
+}
+:root[data-theme='light'] .course-design-page {
+  --course-teal: #087f7b;
+}
+/* Course introduction and cover */
+.course-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 0.7fr);
+  gap: 70px;
+  align-items: center;
+  padding: 22px 0 29px;
+}
+.course-hero .detail-heading {
+  padding: 0;
+}
+.course-hero h1 {
+  font-size: clamp(2.25rem, 3.6vw, 3.1rem);
+  max-width: 20ch;
+  margin: 17px 0 18px;
+}
+.course-hero .case-lead {
+  font-size: 1.01rem;
+  max-width: 58ch;
+}
+.course-role {
+  font-size: 0.78rem;
+  line-height: 1.85;
+  color: var(--muted);
+  margin-top: 18px;
+}
+.course-role strong {
+  color: var(--ink);
+  font-weight: 550;
+  margin-right: 8px;
+}
+.course-status {
+  font-size: 0.74rem;
+  color: var(--muted);
+  line-height: 1.8;
+  margin-top: 9px;
+}
+.course-hero-art {
+  margin: 0;
+  min-width: 0;
+  max-width: 340px;
+  justify-self: end;
+}
+.course-hero-art img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 8/5;
+  border-radius: 7px;
+}
+/* Course facts and section navigation */
+.course-facts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 30px;
+  padding: 18px 0;
+  margin: 0;
+  border-block: 1px solid var(--line);
+}
+.course-facts > div {
+  min-width: 0;
+}
+.course-facts dt {
+  font-size: 0.68rem;
+  color: var(--muted);
+  margin-bottom: 5px;
+  line-height: 1.7;
+}
+.course-facts dd {
+  font-size: 0.87rem;
+  line-height: 1.75;
+  margin: 0;
+  color: var(--ink);
+}
+.course-section-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 30px;
+  padding: 13px 0 22px;
+}
+.course-section-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  font-size: 0.78rem;
+  line-height: 1.6;
+  color: var(--accent);
+  text-decoration: none;
+}
+.course-section-nav a:hover {
+  text-decoration: underline;
+}
+/* Case-study headings and visible rationale */
+.case-section {
+  display: grid;
+  grid-template-columns: minmax(0, 0.7fr) minmax(0, 1.6fr);
+  gap: 70px;
+  padding: 34px 0 39px;
+  border-top: 1px solid var(--line);
+  align-items: start;
+}
+.case-section-heading {
+  min-width: 0;
+}
+.case-section-heading .kicker {
+  font-size: 0.67rem;
+  color: var(--accent);
+}
+.case-section-heading h2 {
+  font-size: clamp(1.4rem, 2.1vw, 1.7rem);
+  line-height: 1.25;
+  margin-top: 12px;
+  max-width: 22ch;
+}
+.case-section-body {
+  min-width: 0;
+  max-width: 76ch;
+}
+.case-section-body > p,
+.case-section-body li {
+  font-size: 0.95rem;
+  line-height: 1.9;
+  color: var(--muted);
+}
+.case-section-body > p + p {
+  margin-top: 16px;
+}
+.case-section-body > h3 {
+  font-size: 1.09rem;
+  line-height: 1.5;
+  margin: 22px 0 9px;
+}
+/* Blended learning format visual */
+.course-format {
+  padding: 18px 21px 17px;
+  background: var(--soft);
+  border-radius: 7px;
+  margin-bottom: 24px;
+}
+.course-format h3 {
+  font-size: 0.88rem;
+  line-height: 1.5;
+  margin-bottom: 14px;
+}
+.format-bar {
+  height: 6px;
+  display: flex;
+  gap: 3px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.format-bar span:first-child {
+  background: var(--accent);
+  flex: 3;
+}
+.format-bar span:last-child {
+  background: var(--course-teal);
+  flex: 2;
+}
+.format-labels {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-top: 11px;
+  font-size: 0.73rem;
+  line-height: 1.8;
+  color: var(--muted);
+}
+.format-labels > span {
+  display: block;
+  min-width: 0;
+}
+.format-labels strong {
+  display: block;
+  color: var(--ink);
+  font-size: 0.82rem;
+  font-weight: 550;
+  line-height: 1.7;
+  margin-bottom: 2px;
+}
+/* Peer feedback and design responses */
+.feedback-table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  margin: 23px 0;
+  font-size: 0.87rem;
+  line-height: 1.8;
+}
+.feedback-table th,
+.feedback-table td {
+  text-align: left;
+  vertical-align: top;
+  padding: 15px 15px 15px 0;
+  border-bottom: 1px solid var(--quiet-line);
+  overflow-wrap: anywhere;
+}
+.feedback-table thead th {
+  font-size: 0.73rem;
+  color: var(--muted);
+  font-weight: 500;
+  border-top: 1px solid var(--line);
+  border-bottom-color: var(--line);
+}
+.feedback-table th:first-child {
+  width: 29%;
+  padding-right: 23px;
+}
+.feedback-table tbody th {
+  font-weight: 550;
+  color: var(--ink);
+}
+.feedback-table td {
+  color: var(--muted);
+  padding-right: 0;
+}
+/* Expandable bibliography */
+.course-references {
+  margin-top: 25px;
+  border-block: 1px solid var(--quiet-line);
+}
+.course-references summary {
+  cursor: pointer;
+  padding: 16px 5px 16px 0;
+  color: var(--ink);
+  font-size: 0.87rem;
+  line-height: 1.8;
+  border-radius: 4px;
+}
+.course-references summary::marker {
+  color: var(--accent);
+}
+.course-references > div {
+  padding: 0 0 19px 18px;
+}
+.course-references p,
+.course-references li {
+  font-size: 0.84rem;
+  line-height: 1.9;
+  color: var(--muted);
+}
+.course-references ul {
+  padding-left: 18px;
+  margin: 12px 0 0;
+}
+.course-references li + li {
+  margin-top: 9px;
+}
+.course-references a {
+  color: var(--accent);
+  overflow-wrap: anywhere;
+}
+/* Responsive and preference rules: (max-width:1000px) */
+@media (max-width: 1000px) {
+  .course-hero {
+    gap: 38px;
+    grid-template-columns: minmax(0, 1.5fr) minmax(0, 0.7fr);
+  }
+  .course-hero h1 {
+    font-size: 2.6rem;
+  }
+  .case-section {
+    gap: 40px;
+    grid-template-columns: minmax(0, 0.65fr) minmax(0, 1.5fr);
+  }
+  .case-section-heading h2 {
+    font-size: 1.47rem;
+  }
+}
+/* Responsive and preference rules: (max-width:760px) */
+@media (max-width: 760px) {
+  .course-hero {
+    gap: 27px;
+    grid-template-columns: minmax(0, 1.5fr) minmax(0, 0.7fr);
+  }
+  .course-hero h1 {
+    font-size: 2.3rem;
+  }
+  .course-hero .case-lead {
+    font-size: 0.96rem;
+  }
+  .case-section {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 29px 0 34px;
+  }
+  .case-section-heading h2 {
+    max-width: 34ch;
+    font-size: 1.55rem;
+    margin-top: 10px;
+  }
+  .case-section-body {
+    max-width: none;
+  }
+  .course-facts {
+    gap: 18px;
+  }
+}
+/* Responsive and preference rules: (max-width:540px) */
+@media (max-width: 540px) {
+  .course-hero {
+    grid-template-columns: 1fr;
+    padding: 19px 0 24px;
+    gap: 20px;
+  }
+  .course-hero h1 {
+    font-size: 2.25rem;
+    max-width: 20ch;
+  }
+  .course-hero-art {
+    width: min(100%, 270px);
+    justify-self: start;
+  }
+  .course-facts {
+    grid-template-columns: 1fr;
+    gap: 13px;
+    padding: 18px 0;
+  }
+  .course-facts > div {
+    display: grid;
+    grid-template-columns: minmax(0, 0.65fr) minmax(0, 1.35fr);
+    gap: 15px;
+    align-items: baseline;
+  }
+  .course-facts dt {
+    margin: 0;
+  }
+  .course-facts dd {
+    font-size: 0.83rem;
+  }
+  .course-section-nav {
+    gap: 2px 21px;
+    padding-block: 12px 18px;
+  }
+  .course-section-nav a {
+    font-size: 0.75rem;
+  }
+  .case-section-heading h2 {
+    font-size: 1.5rem;
+  }
+  .case-section-body > p,
+  .case-section-body li {
+    font-size: 0.93rem;
+  }
+  .course-format {
+    padding: 17px 18px;
+  }
+  .format-labels {
+    gap: 15px;
+    font-size: 0.71rem;
+  }
+  .format-labels strong {
+    font-size: 0.79rem;
+  }
+  .feedback-table {
+    font-size: 0.83rem;
+  }
+  .feedback-table th,
+  .feedback-table td {
+    padding-block: 14px;
+  }
+  .feedback-table th:first-child {
+    width: 40%;
+    padding-right: 14px;
+  }
+}
+/* Responsive and preference rules: print */
+@media print {
+  .course-hero,
+  .case-section {
+    display: block;
+  }
+  .course-hero-art {
+    max-width: 230px;
+    margin-top: 18px;
+  }
+  .course-section-nav {
+    display: none;
+  }
+  .case-section-heading {
+    margin-bottom: 20px;
+  }
+  .course-references > div {
+    display: block !important;
+  }
+}

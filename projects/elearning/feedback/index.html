@@ -1,0 +1,252 @@
+<!doctype html>
+<html
+  lang="en"
+  data-theme="dark">
+  <!-- DOCUMENT HEAD: metadata, initial theme and styles -->
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1" />
+    <script>
+      // Choose the initial theme before the page is painted.
+      (() => {
+        let t;
+        try {
+          t = localStorage.getItem('edit-portfolio-theme');
+        } catch (e) {}
+        if (t !== 'light' && t !== 'dark') {
+          const h = new Date().getHours();
+          t = h >= 7 && h < 17 ? 'light' : 'dark';
+        }
+        document.documentElement.dataset.theme = t;
+      })();
+    </script>
+    <title>The feedback conversation | Edit Domoszlai</title>
+    <meta
+      name="description"
+      content="A browser-based feedback conversation simulation with branching choices and a short knowledge check." />
+    <link
+      rel="icon"
+      href="../../../favicon.svg"
+      type="image/svg+xml" />
+    <!-- STYLESHEETS: shared styles first, page styles and accessibility overrides last -->
+    <link
+      rel="stylesheet"
+      href="../../../css/site.css" />
+    <link
+      rel="stylesheet"
+      href="../../../css/covers.css" />
+    <link
+      rel="stylesheet"
+      href="../../../css/learning-projects.css" />
+    <link
+      rel="stylesheet"
+      href="../../../css/motion.css" />
+    <link
+      rel="stylesheet"
+      href="../../../css/accessibility.css" />
+  </head>
+  <body
+    id="top"
+    class="project-page learning-course-page">
+    <a
+      class="skip-link"
+      href="#main">Skip to content</a>
+
+    <!-- SITE HEADER: home link, main navigation and theme controls -->
+    <header class="site-header">
+      <div class="header-inner shell">
+        <a
+          class="brand"
+          href="../../../index.html"
+          aria-label="Edit Domoszlai, home">Edit Domoszlai</a>
+        <nav
+          id="site-navigation"
+          aria-label="Main navigation">
+          <a
+            href="../../../index.html#work"
+            aria-current="page">Work</a>
+          <a href="../../../research/index.html">Notes</a>
+          <a href="../../../index.html#about">About</a>
+          <a href="../../../index.html#contact">Contact</a>
+        </nav>
+        <div class="header-controls">
+          <button
+            class="theme-toggle"
+            type="button"
+            aria-label="Switch to light mode"
+            aria-pressed="false">
+            <span
+              aria-hidden="true"
+              class="theme-icon">☼</span>
+          </button>
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Open menu"
+            aria-controls="site-navigation"
+            aria-expanded="false">
+            <span class="menu-label">Menu</span><span
+              aria-hidden="true"
+              class="menu-lines"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- FALLBACK: navigation remains available when JavaScript is disabled -->
+    <noscript><style>
+        .site-header {
+          position: static;
+        }
+        .header-controls {
+          display: none;
+        }
+        .site-header nav {
+          position: static;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: 8px 20px;
+          padding: 8px 0;
+          border: 0;
+          visibility: visible;
+          opacity: 1;
+          pointer-events: auto;
+        }
+        .site-header nav a {
+          border: 0;
+          padding: 8px 0;
+        }
+      </style></noscript>
+    <!-- MAIN CONTENT -->
+    <main
+      id="main"
+      tabindex="-1">
+      <div class="wrap detail">
+        <a
+          class="back-link"
+          href="../index.html">← ARTICULATE PROJECTS</a>
+        <div class="detail-heading">
+          <p class="kicker">02 / INTERACTIVE LEARNING / WEB SIMULATION</p>
+          <h1>The feedback conversation<span class="period">.</span></h1>
+          <p class="case-lead">
+            A simulated workplace conversation for practising specific, useful feedback.
+          </p>
+          <p class="status-note"><span></span>Portfolio project · Ready to try</p>
+        </div>
+
+        <!-- PROJECT DETAILS: scope and role -->
+        <div class="case-facts">
+          <div>
+            <span>PROJECT</span><strong>Fictional workplace scenario · Interactive web course</strong>
+          </div>
+          <div><span>FORMAT</span><strong>Browser-based simulation · Ready to try</strong></div>
+        </div>
+
+        <!-- CASE STUDY: explanation and supporting media -->
+        <div class="case-brief">
+          <div class="case-story">
+            <!-- SECTION: Turn a difficult moment into a conversation -->
+            <section>
+              <span>01 / PROBLEM</span>
+              <h2>Turn a difficult moment into a conversation</h2>
+              <p>
+                The scenario starts with a late project handover and a draft message that blames a
+                teammate. The task is to turn that draft into a clear, useful conversation.
+              </p>
+            </section>
+
+            <!-- SECTION: Practise the words and the next step -->
+            <section>
+              <span>02 / RESPONSE</span>
+              <h2>Practise the words and the next step</h2>
+              <p>
+                Learners revise the draft, choose from three conversation approaches and make a
+                follow-up decision. Each route shows a different response, followed by a short
+                knowledge check.
+              </p>
+            </section>
+
+            <!-- SECTION: A browser-based learning experience -->
+            <section>
+              <span>03 / RESULT</span>
+              <h2>A browser-based learning experience</h2>
+              <p>
+                The course lets learners explore different routes and review feedback on their
+                decisions. It recreates a slide-based course experience using HTML, CSS and
+                JavaScript.
+              </p>
+              <p class="project-scope-note">
+                An independent portfolio simulation with fictional people and conversations. Built
+                for the web.
+              </p>
+            </section>
+          </div>
+
+          <!-- PROJECT MEDIA AND TOOLS -->
+          <div class="case-media">
+            <!-- SECTION: Try the conversation -->
+            <section
+              class="course-demo"
+              aria-labelledby="feedback-demo-title">
+              <img
+                src="../../../art/concepts/feedback.svg"
+                alt=""
+                width="640"
+                height="400"
+                decoding="async" />
+              <div class="course-demo-copy">
+                <p class="project-category">BROWSER-BASED SIMULATION</p>
+                <h2 id="feedback-demo-title">Try the conversation</h2>
+                <p>Rescue the draft. Talk to Sam. Find a next step.</p>
+                <a
+                  class="button button-primary"
+                  href="https://the-feedback-conversation-edit.edit-domoszlai.chatgpt.site"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Try the course (opens in a new tab)">Try the course <span aria-hidden="true">↗</span></a><span class="course-new-tab">Opens in a new tab</span>
+              </div>
+            </section>
+
+            <!-- SUPPORTING CONTENT: Tools & methods -->
+            <aside class="case-tools">
+              <h2 id="tools-feedback">Tools &amp; methods</h2>
+              <ul class="tool-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>scenario design</li>
+                <li>branching</li>
+                <li>knowledge check</li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+
+        <!-- NEXT PROJECT -->
+        <a
+          class="next-project"
+          href="../price-engine/index.html"><span>EXPLORE THE OTHER COURSE</span><strong>Price Engine for Customer Service</strong><b aria-hidden="true">↗</b></a>
+      </div>
+    </main>
+
+    <!-- SITE FOOTER: copyright, accessibility and back to top -->
+    <footer class="site-footer shell">
+      <span>© <span data-year>2026</span> Edit Domoszlai</span>
+      <nav
+        class="footer-links"
+        aria-label="Footer">
+        <a href="../../../accessibility.html">Accessibility</a>
+        <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
+      </nav>
+    </footer>
+    <!-- PAGE SCRIPTS: shared interactions and optional page features -->
+    <script
+      src="../../../js/site.js"
+      defer></script>
+    <script
+      src="../../../js/motion.js"
+      defer></script>
+  </body>
+</html>

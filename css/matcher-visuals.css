@@ -1,0 +1,140 @@
+/* Method sketches show the learner's action rather than a product screenshot. */
+/* Method illustration colors */
+.matcher-page {
+  --visual-blue: #3e5bff;
+  --visual-teal: #00958d;
+  --visual-pink: #ff6c88;
+  --visual-paper: #ffffff;
+  --visual-ink: #1e2d58;
+  --visual-line: #aebee9;
+  --visual-wash: #e4ebff;
+  --visual-outside: #ffe8f1;
+}
+:root:not([data-theme='light']) .matcher-page {
+  --visual-blue: #9aaeff;
+  --visual-teal: #4fe0ce;
+  --visual-pink: #ff88b7;
+  --visual-paper: #1b2845;
+  --visual-ink: #e8eeff;
+  --visual-line: #62779e;
+  --visual-wash: #25365c;
+  --visual-outside: #3d2947;
+}
+/* Illustration frames and captions */
+.method-visual {
+  margin: 16px 0 18px;
+  background: var(--visual-wash);
+  border: 1px solid var(--quiet-line);
+  border-radius: 7px;
+  overflow: hidden;
+}
+.outside .method-visual {
+  background: var(--visual-outside);
+}
+.method-visual svg {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 300/132;
+  max-height: 156px;
+}
+.method-visual figcaption {
+  border-top: 1px solid var(--quiet-line);
+  padding: 8px 10px 9px;
+  background: var(--surface);
+  font-size: 0.68rem;
+  line-height: 1.65;
+  color: var(--muted);
+}
+/* Shared SVG shape styles */
+.method-visual .v-paper {
+  fill: var(--visual-paper);
+}
+.method-visual .v-blue {
+  fill: var(--visual-blue);
+}
+.method-visual .v-teal {
+  fill: var(--visual-teal);
+}
+.method-visual .v-pink {
+  fill: var(--visual-pink);
+}
+.method-visual .v-ink {
+  fill: var(--visual-ink);
+}
+.method-visual .v-outline {
+  fill: var(--visual-paper);
+  stroke: var(--visual-ink);
+  stroke-width: 1.7;
+}
+.method-visual .v-path {
+  fill: none;
+  stroke: var(--visual-ink);
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.method-visual .v-accent-path {
+  fill: none;
+  stroke: var(--visual-blue);
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.method-visual .v-line {
+  fill: none;
+  stroke: var(--visual-line);
+  stroke-width: 3;
+  stroke-linecap: round;
+}
+.method-visual .v-check {
+  fill: none;
+  stroke: var(--visual-teal);
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.method-visual .v-alert {
+  fill: none;
+  stroke: var(--visual-pink);
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.method-visual text {
+  font-family: inherit;
+  fill: var(--visual-ink);
+  font-size: 12px;
+  font-weight: 500;
+  text-anchor: middle;
+}
+.method-visual .v-small {
+  font-size: 9px;
+}
+.method-visual .v-inverse {
+  fill: var(--visual-paper);
+}
+.method-visual .v-on-accent {
+  fill: #10192e;
+}
+/* Responsive and preference rules: (max-width:600px) */
+@media (max-width: 600px) {
+  .method-visual svg {
+    max-height: 150px;
+  }
+  .method-visual text {
+    font-size: 13px;
+  }
+  .method-visual .v-small {
+    font-size: 11.5px;
+  }
+  .method-visual figcaption {
+    font-size: 0.72rem;
+    padding: 9px 11px;
+  }
+}
+/* Responsive and preference rules: print */
+@media print {
+  .method-visual {
+    break-inside: avoid;
+  }
+}

@@ -1,0 +1,238 @@
+<!doctype html>
+<html
+  lang="en"
+  data-theme="dark">
+  <!-- DOCUMENT HEAD: metadata, initial theme and styles -->
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1" />
+    <script>
+      // Choose the initial theme before the page is painted.
+      (() => {
+        let t;
+        try {
+          t = localStorage.getItem('edit-portfolio-theme');
+        } catch (e) {}
+        if (t !== 'light' && t !== 'dark') {
+          const h = new Date().getHours();
+          t = h >= 7 && h < 17 ? 'light' : 'dark';
+        }
+        document.documentElement.dataset.theme = t;
+      })();
+    </script>
+    <title>Research into e-learning authoring tools | Edit Domoszlai</title>
+    <meta
+      name="description"
+      content="Learning design, documentation, digital projects and research by Edit Domoszlai." />
+    <link
+      rel="icon"
+      href="../../favicon.svg"
+      type="image/svg+xml" />
+    <!-- STYLESHEETS: shared styles first, page styles and accessibility overrides last -->
+    <link
+      rel="stylesheet"
+      href="../../css/site.css" />
+    <link
+      rel="stylesheet"
+      href="../../css/accessibility.css" />
+  </head>
+  <body
+    id="top"
+    class="project-page">
+    <a
+      class="skip-link"
+      href="#main">Skip to content</a>
+
+    <!-- SITE HEADER: home link, main navigation and theme controls -->
+    <header class="site-header">
+      <div class="header-inner shell">
+        <a
+          class="brand"
+          href="../../index.html"
+          aria-label="Edit Domoszlai, home">Edit Domoszlai</a>
+        <nav
+          id="site-navigation"
+          aria-label="Main navigation">
+          <a
+            href="../../index.html#work"
+            aria-current="page">Work</a>
+          <a href="../../research/index.html">Notes</a>
+          <a href="../../index.html#about">About</a>
+          <a href="../../index.html#contact">Contact</a>
+        </nav>
+        <div class="header-controls">
+          <button
+            class="theme-toggle"
+            type="button"
+            aria-label="Switch to light mode"
+            aria-pressed="false">
+            <span
+              aria-hidden="true"
+              class="theme-icon">☼</span>
+          </button>
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Open menu"
+            aria-controls="site-navigation"
+            aria-expanded="false">
+            <span class="menu-label">Menu</span><span
+              aria-hidden="true"
+              class="menu-lines"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- FALLBACK: navigation remains available when JavaScript is disabled -->
+    <noscript><style>
+        .site-header {
+          position: static;
+        }
+        .header-controls {
+          display: none;
+        }
+        .site-header nav {
+          position: static;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: 8px 20px;
+          padding: 8px 0;
+          border: 0;
+          visibility: visible;
+          opacity: 1;
+          pointer-events: auto;
+        }
+        .site-header nav a {
+          border: 0;
+          padding: 8px 0;
+        }
+      </style></noscript>
+    <!-- MAIN CONTENT -->
+    <main
+      id="main"
+      tabindex="-1">
+      <div class="wrap detail">
+        <a
+          class="back-link"
+          href="../../index.html#work">← ALL PROJECTS</a>
+        <div class="detail-heading">
+          <p class="kicker">04 / RESEARCH / EDUCATION TECHNOLOGY</p>
+          <h1>Research into e-learning authoring tools<span class="period">.</span></h1>
+          <p class="case-lead">
+            A UCL dissertation on designers, software choices and professional practice.
+          </p>
+          <p class="project-research-link">
+            <a href="../../research/dissertation/index.html">Read the research findings →</a>
+          </p>
+        </div>
+
+        <!-- PROJECT DETAILS: scope and role -->
+        <div class="case-facts">
+          <div><span>PROJECT</span><strong>UCL Institute of Education</strong></div>
+          <div>
+            <span>ROLE</span><strong>Research design · data analysis · academic writing</strong>
+          </div>
+        </div>
+
+        <!-- CASE STUDY: explanation and supporting media -->
+        <div class="case-brief">
+          <div class="case-story">
+            <!-- SECTION: Examine the tool’s influence -->
+            <section>
+              <span>01 / PROBLEM</span>
+              <h2>Examine the tool’s influence</h2>
+              <p>
+                E-learning authoring tools are often treated as neutral containers. I wanted to
+                examine how their features and constraints influence the design decisions
+                practitioners make.
+              </p>
+            </section>
+
+            <!-- SECTION: Survey and interview designers -->
+            <section>
+              <span>02 / RESPONSE</span>
+              <h2>Survey and interview designers</h2>
+              <p>
+                I designed an online survey, conducted semi-structured interviews with instructional
+                designers and analysed how they chose tools and adapted their work to them.
+              </p>
+            </section>
+
+            <!-- SECTION: Award-winning dissertation -->
+            <section>
+              <span>03 / RESULT</span>
+              <h2>Award-winning dissertation</h2>
+              <p>
+                The dissertation received the Exceptional Dissertation Award from the UCL Institute
+                of Education.
+              </p>
+            </section>
+          </div>
+
+          <!-- PROJECT MEDIA AND TOOLS -->
+          <div class="case-media">
+            <div class="detail-video">
+              <video
+                aria-label="Silent video: A brief look through the dissertation."
+                controls=""
+                playsinline=""
+                poster="../../images/research.jpg"
+                preload="none">
+                <source
+                  src="../../videos/research.mp4"
+                  type="video/mp4" />
+                Your browser does not support embedded video.
+              </video>
+              <p>A brief look through the dissertation.</p>
+              <details class="media-description">
+                <summary>Read a text description of the silent walkthrough</summary>
+                <p>
+                  This silent recording scrolls through the dissertation contents. The chapters
+                  cover a literature review, methodology, findings, discussion and conclusion. The
+                  findings are organised around designers’ backgrounds and tool use, software
+                  influence on practice, reasons for tool selection, challenges and improvements,
+                  and follow-up topics. The clip previews the document’s structure; the portfolio’s
+                  written research sections explain the findings.
+                </p>
+              </details>
+            </div>
+
+            <!-- SUPPORTING CONTENT: Tools & methods -->
+            <aside class="case-tools">
+              <h2 id="tools-research">Tools &amp; methods</h2>
+              <ul class="tool-list">
+                <li>Qualitative research</li>
+                <li>surveys</li>
+                <li>interviews</li>
+                <li>thematic analysis</li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+
+        <!-- NEXT PROJECT -->
+        <a
+          class="next-project"
+          href="../elearning/index.html"><span>NEXT PROJECT</span><strong>Articulate projects</strong><b aria-hidden="true">↗</b></a>
+      </div>
+    </main>
+
+    <!-- SITE FOOTER: copyright, accessibility and back to top -->
+    <footer class="site-footer shell">
+      <span>© <span data-year>2026</span> Edit Domoszlai</span>
+      <nav
+        class="footer-links"
+        aria-label="Footer">
+        <a href="../../accessibility.html">Accessibility</a>
+        <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
+      </nav>
+    </footer>
+    <!-- PAGE SCRIPTS: shared interactions and optional page features -->
+    <script
+      src="../../js/site.js"
+      defer></script>
+  </body>
+</html>

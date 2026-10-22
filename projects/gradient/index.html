@@ -1,0 +1,243 @@
+<!doctype html>
+<html
+  lang="en"
+  data-theme="dark">
+  <!-- DOCUMENT HEAD: metadata, initial theme and styles -->
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1" />
+    <script>
+      // Choose the initial theme before the page is painted.
+      (() => {
+        let t;
+        try {
+          t = localStorage.getItem('edit-portfolio-theme');
+        } catch (e) {}
+        if (t !== 'light' && t !== 'dark') {
+          const h = new Date().getHours();
+          t = h >= 7 && h < 17 ? 'light' : 'dark';
+        }
+        document.documentElement.dataset.theme = t;
+      })();
+    </script>
+    <title>Gradient brand and website | Edit Domoszlai</title>
+    <meta
+      name="description"
+      content="Learning design, documentation, digital projects and research by Edit Domoszlai." />
+    <link
+      rel="icon"
+      href="../../favicon.svg"
+      type="image/svg+xml" />
+    <!-- STYLESHEETS: shared styles first, page styles and accessibility overrides last -->
+    <link
+      rel="stylesheet"
+      href="../../css/site.css" />
+    <link
+      rel="stylesheet"
+      href="../../css/accessibility.css" />
+  </head>
+  <body
+    id="top"
+    class="project-page">
+    <a
+      class="skip-link"
+      href="#main">Skip to content</a>
+
+    <!-- SITE HEADER: home link, main navigation and theme controls -->
+    <header class="site-header">
+      <div class="header-inner shell">
+        <a
+          class="brand"
+          href="../../index.html"
+          aria-label="Edit Domoszlai, home">Edit Domoszlai</a>
+        <nav
+          id="site-navigation"
+          aria-label="Main navigation">
+          <a
+            href="../../index.html#work"
+            aria-current="page">Work</a>
+          <a href="../../research/index.html">Notes</a>
+          <a href="../../index.html#about">About</a>
+          <a href="../../index.html#contact">Contact</a>
+        </nav>
+        <div class="header-controls">
+          <button
+            class="theme-toggle"
+            type="button"
+            aria-label="Switch to light mode"
+            aria-pressed="false">
+            <span
+              aria-hidden="true"
+              class="theme-icon">☼</span>
+          </button>
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Open menu"
+            aria-controls="site-navigation"
+            aria-expanded="false">
+            <span class="menu-label">Menu</span><span
+              aria-hidden="true"
+              class="menu-lines"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- FALLBACK: navigation remains available when JavaScript is disabled -->
+    <noscript><style>
+        .site-header {
+          position: static;
+        }
+        .header-controls {
+          display: none;
+        }
+        .site-header nav {
+          position: static;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: 8px 20px;
+          padding: 8px 0;
+          border: 0;
+          visibility: visible;
+          opacity: 1;
+          pointer-events: auto;
+        }
+        .site-header nav a {
+          border: 0;
+          padding: 8px 0;
+        }
+      </style></noscript>
+    <!-- MAIN CONTENT -->
+    <main
+      id="main"
+      tabindex="-1">
+      <div class="wrap detail">
+        <a
+          class="back-link"
+          href="../../index.html#work">← ALL PROJECTS</a>
+        <div class="detail-heading">
+          <p class="kicker">03 / BRAND / WEB DESIGN</p>
+          <h1>Gradient brand and website<span class="period">.</span></h1>
+          <p class="case-lead">
+            A name, visual direction and website for Gradient Contemporary Ballet Debrecen.
+          </p>
+        </div>
+
+        <!-- PROJECT DETAILS: scope and role -->
+        <div class="case-facts">
+          <div><span>PROJECT</span><strong>Gradient Contemporary Ballet Debrecen</strong></div>
+          <div>
+            <span>ROLE</span><strong>Brand development · UX/UI · front-end development</strong>
+          </div>
+        </div>
+
+        <!-- CASE STUDY: explanation and supporting media -->
+        <div class="case-brief">
+          <div class="case-story">
+            <!-- SECTION: Give a new company an identity -->
+            <section>
+              <span>01 / PROBLEM</span>
+              <h2>Give a new company an identity</h2>
+              <p>
+                A newly developing contemporary dance company needed a recognisable identity and a
+                clear place to present its work to audiences and prospective dancers.
+              </p>
+            </section>
+
+            <!-- SECTION: Build the brand and website -->
+            <section>
+              <span>02 / RESPONSE</span>
+              <h2>Build the brand and website</h2>
+              <p>
+                I named the company, developed its brand direction and designed and coded a website
+                from scratch to communicate its repertoire, people and opportunities.
+              </p>
+            </section>
+
+            <!-- SECTION: Establish a public presence -->
+            <section>
+              <span>03 / RESULT</span>
+              <h2>Establish a public presence</h2>
+              <p>
+                The site supported the company’s public presence during its development from 2024 to
+                2026. The original theatre domain is no longer connected to that site.
+              </p>
+            </section>
+
+            <!-- SECTION: Visit the site -->
+            <section aria-labelledby="visit-gradient">
+              <h2 id="visit-gradient">Visit the site</h2>
+              <a
+                class="button button-primary"
+                href="https://editdomo0908.github.io/testgradient/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Open Gradient website (opens in a new tab)">Open Gradient website <span aria-hidden="true">↗</span></a>
+            </section>
+          </div>
+
+          <!-- PROJECT MEDIA AND TOOLS -->
+          <div class="case-media">
+            <div class="detail-video">
+              <video
+                aria-label="Silent video: Gradient website walkthrough"
+                controls=""
+                playsinline=""
+                poster="../../images/gradient.jpg"
+                preload="none">
+                <source
+                  src="../../videos/gradient.mp4"
+                  type="video/mp4" />
+                Your browser does not support embedded video.
+              </video>
+              <p>Website walkthrough · Gradient Contemporary Ballet Debrecen</p>
+              <details class="media-description">
+                <summary>Read a text description of the silent walkthrough</summary>
+                <p>
+                  This silent montage shows three parts of the Gradient project: the website code in
+                  an editor, the website homepage with the company name and dancer imagery, and a
+                  brand-layout document combining photographs and text. It provides a visual preview
+                  of the code, website and identity work described on this page.
+                </p>
+              </details>
+            </div>
+
+            <!-- SUPPORTING CONTENT: Tools & methods -->
+            <aside class="case-tools">
+              <h2 id="tools-gradient">Tools &amp; methods</h2>
+              <ul class="tool-list">
+                <li>HTML</li>
+                <li>Sass</li>
+                <li>JavaScript</li>
+                <li>Git</li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+
+        <!-- NEXT PROJECT -->
+        <a
+          class="next-project"
+          href="../research/index.html"><span>NEXT PROJECT</span><strong>Research into e-learning authoring tools</strong><b aria-hidden="true">↗</b></a>
+      </div>
+    </main>
+
+    <!-- SITE FOOTER: copyright, accessibility and back to top -->
+    <footer class="site-footer shell">
+      <span>© <span data-year>2026</span> Edit Domoszlai</span>
+      <nav
+        class="footer-links"
+        aria-label="Footer">
+        <a href="../../accessibility.html">Accessibility</a>
+        <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
+      </nav>
+    </footer>
+    <!-- PAGE SCRIPTS: shared interactions and optional page features -->
+    <script
+      src="../../js/site.js"
+      defer></script>
+  </body>
+</html>

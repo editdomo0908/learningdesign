@@ -1,0 +1,140 @@
+<!-- Vector artwork: canvas settings, definitions and drawing elements. -->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 640 400">
+  <defs>
+    <pattern
+      id="course-grid"
+      width="32"
+      height="32"
+      patternUnits="userSpaceOnUse">
+      <path
+        d="M32 0H0V32"
+        fill="none"
+        stroke="#1e2d58"
+        stroke-opacity=".045" />
+    </pattern>
+  </defs>
+  <rect
+    width="640"
+    height="400"
+    fill="#e4ebff" />
+  <rect
+    width="640"
+    height="400"
+    fill="url(#course-grid)" />
+  <g transform="rotate(-5 253 179)">
+    <rect
+      x="86"
+      y="73"
+      width="334"
+      height="223"
+      rx="11"
+      fill="#3e5bff"
+      opacity=".15"
+      transform="translate(-7 10)" />
+    <rect
+      x="86"
+      y="73"
+      width="334"
+      height="223"
+      rx="11"
+      fill="#fff"
+      stroke="#1e2d58"
+      stroke-width="2" />
+    <path
+      d="M87 110H419"
+      stroke="#1e2d58"
+      stroke-width="2" />
+    <circle
+      cx="108"
+      cy="92"
+      r="5"
+      fill="#ff6c88" />
+    <circle
+      cx="125"
+      cy="92"
+      r="5"
+      fill="#00a9a0" />
+    <circle
+      cx="142"
+      cy="92"
+      r="5"
+      fill="#3e5bff" />
+    <g
+      fill="none"
+      stroke-width="5"
+      stroke-linecap="round"
+      stroke-linejoin="round">
+      <path
+        d="m153 151-22 21 22 21m52-42 22 21-22 21m-22-52-12 62"
+        stroke="#3e5bff" />
+      <path
+        d="M258 151H365M258 174H340M258 197H352M128 235H365M128 258H294"
+        stroke="#1e2d58"
+        stroke-width="4" />
+    </g>
+  </g>
+  <g transform="rotate(6 466 254)">
+    <rect
+      x="365"
+      y="183"
+      width="204"
+      height="151"
+      rx="9"
+      fill="#00a9a0" />
+    <rect
+      x="383"
+      y="202"
+      width="168"
+      height="20"
+      rx="3"
+      fill="#fff" />
+    <rect
+      x="383"
+      y="235"
+      width="48"
+      height="78"
+      rx="3"
+      fill="#fff"
+      opacity=".75" />
+    <rect
+      x="443"
+      y="235"
+      width="108"
+      height="34"
+      rx="3"
+      fill="#fff" />
+    <path
+      d="M446 285H548M446 302H524"
+      stroke="#fff"
+      stroke-width="4"
+      stroke-linecap="round" />
+  </g>
+  <path
+    d="M445 112C494 110 514 135 511 162"
+    fill="none"
+    stroke="#3e5bff"
+    stroke-width="3"
+    stroke-linecap="round"
+    stroke-dasharray="5 8" />
+  <path
+    d="m502 151 9 14 12-12"
+    fill="none"
+    stroke="#3e5bff"
+    stroke-width="3"
+    stroke-linecap="round"
+    stroke-linejoin="round" />
+  <circle
+    cx="299"
+    cy="326"
+    r="20"
+    fill="#ff6c88" />
+  <path
+    d="m290 326 6 6 12-14"
+    fill="none"
+    stroke="#1e2d58"
+    stroke-width="3"
+    stroke-linecap="round"
+    stroke-linejoin="round" />
+</svg>

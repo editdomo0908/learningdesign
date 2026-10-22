@@ -1,0 +1,331 @@
+<!doctype html>
+<html
+  lang="en"
+  data-theme="dark">
+  <!-- DOCUMENT HEAD: metadata, initial theme and styles -->
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1" />
+    <script>
+      // Choose the initial theme before the page is painted.
+      (() => {
+        let t;
+        try {
+          t = localStorage.getItem('edit-portfolio-theme');
+        } catch (e) {}
+        if (t !== 'light' && t !== 'dark') {
+          const h = new Date().getHours();
+          t = h >= 7 && h < 17 ? 'light' : 'dark';
+        }
+        document.documentElement.dataset.theme = t;
+      })();
+    </script>
+    <title>Articulate projects | Edit Domoszlai</title>
+    <meta
+      name="description"
+      content="Scenario-based learning projects: a Price Engine course for Customer Service and a browser-based feedback simulation." />
+    <link
+      rel="icon"
+      href="../../favicon.svg"
+      type="image/svg+xml" />
+    <!-- STYLESHEETS: shared styles first, page styles and accessibility overrides last -->
+    <link
+      rel="stylesheet"
+      href="../../css/site.css" />
+    <link
+      rel="stylesheet"
+      href="../../css/covers.css" />
+    <link
+      rel="stylesheet"
+      href="../../css/learning-projects.css" />
+    <link
+      rel="stylesheet"
+      href="../../css/motion.css" />
+    <link
+      rel="stylesheet"
+      href="../../css/accessibility.css" />
+  </head>
+  <body
+    id="top"
+    class="project-page learning-collection">
+    <a
+      class="skip-link"
+      href="#main">Skip to content</a>
+
+    <!-- SITE HEADER: home link, main navigation and theme controls -->
+    <header class="site-header">
+      <div class="header-inner shell">
+        <a
+          class="brand"
+          href="../../index.html"
+          aria-label="Edit Domoszlai, home">Edit Domoszlai</a>
+        <nav
+          id="site-navigation"
+          aria-label="Main navigation">
+          <a
+            href="../../index.html#work"
+            aria-current="page">Work</a>
+          <a href="../../research/index.html">Notes</a>
+          <a href="../../index.html#about">About</a>
+          <a href="../../index.html#contact">Contact</a>
+        </nav>
+        <div class="header-controls">
+          <button
+            class="theme-toggle"
+            type="button"
+            aria-label="Switch to light mode"
+            aria-pressed="false">
+            <span
+              aria-hidden="true"
+              class="theme-icon">☼</span>
+          </button>
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Open menu"
+            aria-controls="site-navigation"
+            aria-expanded="false">
+            <span class="menu-label">Menu</span><span
+              aria-hidden="true"
+              class="menu-lines"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- FALLBACK: navigation remains available when JavaScript is disabled -->
+    <noscript><style>
+        .site-header {
+          position: static;
+        }
+        .header-controls {
+          display: none;
+        }
+        .site-header nav {
+          position: static;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: 8px 20px;
+          padding: 8px 0;
+          border: 0;
+          visibility: visible;
+          opacity: 1;
+          pointer-events: auto;
+        }
+        .site-header nav a {
+          border: 0;
+          padding: 8px 0;
+        }
+      </style></noscript>
+    <!-- MAIN CONTENT -->
+    <main
+      id="main"
+      tabindex="-1">
+      <div class="wrap detail">
+        <a
+          class="back-link"
+          href="../../index.html#work">← ALL PROJECTS</a>
+        <div class="detail-heading collection-heading">
+          <p class="kicker">05 / INTERACTIVE LEARNING</p>
+          <h1>Articulate projects<span class="period">.</span></h1>
+          <p class="case-lead">
+            A growing collection of scenario-based learning projects, from Articulate Storyline
+            courses to browser-based simulations.
+          </p>
+        </div>
+
+        <!-- SECTION: Price Engine for Customer Service -->
+        <section
+          class="learning-projects"
+          aria-label="Interactive learning projects">
+          <div class="project-grid learning-project-grid">
+            <!-- PROJECT CARD: Price Engine for Customer Service -->
+            <a
+              class="project-card"
+              href="price-engine/index.html"
+              data-reveal>
+              <div class="project-copy">
+                <p class="project-category">
+                  <span class="project-number">01</span> Articulate Storyline
+                </p>
+                <h2 id="course-price-title">Price Engine for Customer Service</h2>
+              </div>
+              <div class="project-preview concept-cover">
+                <img
+                  src="../../art/concepts/decisions.svg"
+                  alt=""
+                  width="640"
+                  height="400"
+                  loading="lazy"
+                  decoding="async" />
+              </div>
+              <div class="project-footer">
+                <p
+                  class="project-description"
+                  id="course-price-description">
+                  A scenario-based course for the Customer Service team: investigate a pricing
+                  question, choose a response and receive feedback.
+                </p>
+                <p
+                  class="learning-card-status"
+                  id="course-price-status">
+                  <span
+                    class="status-dot"
+                    aria-hidden="true"></span>Ready to try <span class="learning-card-type">Storyline course</span>
+                </p>
+              </div>
+            </a>
+
+            <!-- PROJECT CARD: The feedback conversation -->
+            <a
+              class="project-card"
+              href="feedback/index.html"
+              data-reveal>
+              <div class="project-copy">
+                <p class="project-category">
+                  <span class="project-number">02</span> Browser-based simulation
+                </p>
+                <h2 id="course-feedback-title">The feedback conversation</h2>
+              </div>
+              <div class="project-preview concept-cover">
+                <img
+                  src="../../art/concepts/feedback.svg"
+                  alt=""
+                  width="640"
+                  height="400"
+                  loading="lazy"
+                  decoding="async" />
+              </div>
+              <div class="project-footer">
+                <p
+                  class="project-description"
+                  id="course-feedback-description">
+                  A simulated workplace conversation: improve a draft, choose how to give feedback
+                  and explore what happens next.
+                </p>
+                <p
+                  class="learning-card-status"
+                  id="course-feedback-status">
+                  <span
+                    class="status-dot"
+                    aria-hidden="true"></span>Ready to try <span class="learning-card-type">Web course</span>
+                </p>
+              </div>
+            </a>
+
+            <!-- PROJECT CARD: More to come -->
+            <article
+              class="project-card project-card-upcoming"
+              aria-labelledby="course-upcoming-title"
+              aria-describedby="course-upcoming-description"
+              data-reveal>
+              <div class="project-copy">
+                <p class="project-category">
+                  <span class="project-number">03</span> Interactive learning
+                </p>
+                <h2 id="course-upcoming-title">More to come</h2>
+              </div>
+              <div
+                class="project-preview concept-cover upcoming-preview"
+                aria-hidden="true">
+                <svg
+                  viewBox="0 0 640 400"
+                  focusable="false">
+                  <rect
+                    width="640"
+                    height="400"
+                    fill="#e4ebff" />
+                  <rect
+                    x="189"
+                    y="91"
+                    width="254"
+                    height="222"
+                    rx="9"
+                    fill="#00a9a0"
+                    opacity=".15"
+                    transform="rotate(9 316 202)" />
+                  <rect
+                    x="182"
+                    y="88"
+                    width="254"
+                    height="222"
+                    rx="9"
+                    fill="#ff6c88"
+                    opacity=".18"
+                    transform="rotate(-9 309 199)" />
+                  <rect
+                    x="192"
+                    y="80"
+                    width="254"
+                    height="234"
+                    rx="9"
+                    fill="#ffffff"
+                    stroke="#3e5bff"
+                    stroke-width="2.5"
+                    stroke-dasharray="7 8" />
+                  <path
+                    d="M228 120H350M228 135H314"
+                    stroke="#d2ddf3"
+                    stroke-width="4"
+                    stroke-linecap="round" />
+                  <circle
+                    cx="279"
+                    cy="211"
+                    r="8"
+                    fill="#3e5bff" />
+                  <circle
+                    cx="319"
+                    cy="211"
+                    r="8"
+                    fill="#00a9a0" />
+                  <circle
+                    cx="359"
+                    cy="211"
+                    r="8"
+                    fill="#ff6c88" />
+                  <path
+                    d="M250 277H388"
+                    stroke="#d2ddf3"
+                    stroke-width="4"
+                    stroke-linecap="round" />
+                </svg>
+              </div>
+              <div class="project-footer">
+                <p
+                  class="project-description"
+                  id="course-upcoming-description">
+                  More interactive learning projects will be added here.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- NEXT PROJECT -->
+        <a
+          class="next-project"
+          href="../html-css-course/index.html"><span>NEXT PROJECT</span><strong>HTML &amp; CSS for academic staff</strong><b aria-hidden="true">↗</b></a>
+      </div>
+    </main>
+
+    <!-- SITE FOOTER: copyright, accessibility and back to top -->
+    <footer class="site-footer shell">
+      <span>© <span data-year>2026</span> Edit Domoszlai</span>
+      <nav
+        class="footer-links"
+        aria-label="Footer">
+        <a href="../../accessibility.html">Accessibility</a>
+        <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
+      </nav>
+    </footer>
+    <!-- PAGE SCRIPTS: shared interactions and optional page features -->
+    <script
+      src="../../js/site.js"
+      defer></script>
+    <script
+      src="../../js/motion.js"
+      defer></script>
+  </body>
+</html>

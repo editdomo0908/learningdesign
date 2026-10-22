@@ -1,0 +1,225 @@
+<!doctype html>
+<html
+  lang="en"
+  data-theme="dark">
+  <!-- DOCUMENT HEAD: metadata, initial theme and styles -->
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1" />
+    <script>
+      // Choose the initial theme before the page is painted.
+      (() => {
+        let t;
+        try {
+          t = localStorage.getItem('edit-portfolio-theme');
+        } catch (e) {}
+        if (t !== 'light' && t !== 'dark') {
+          const h = new Date().getHours();
+          t = h >= 7 && h < 17 ? 'light' : 'dark';
+        }
+        document.documentElement.dataset.theme = t;
+      })();
+    </script>
+    <title>Notes | Edit Domoszlai</title>
+    <meta
+      name="description"
+      content="Learning design, documentation, digital projects and research by Edit Domoszlai." />
+    <link
+      rel="icon"
+      href="../favicon.svg"
+      type="image/svg+xml" />
+    <!-- STYLESHEETS: shared styles first, page styles and accessibility overrides last -->
+    <link
+      rel="stylesheet"
+      href="../css/site.css" />
+    <link
+      rel="stylesheet"
+      href="../css/covers.css" />
+    <link
+      rel="stylesheet"
+      href="../css/motion.css" />
+    <link
+      rel="stylesheet"
+      href="../css/accessibility.css" />
+  </head>
+  <body
+    id="top"
+    class="research-home">
+    <a
+      class="skip-link"
+      href="#main">Skip to content</a>
+
+    <!-- SITE HEADER: home link, main navigation and theme controls -->
+    <header class="site-header">
+      <div class="header-inner shell">
+        <a
+          class="brand"
+          href="../index.html"
+          aria-label="Edit Domoszlai, home">Edit Domoszlai</a>
+        <nav
+          id="site-navigation"
+          aria-label="Main navigation">
+          <a href="../index.html#work">Work</a>
+          <a
+            href="../research/index.html"
+            aria-current="page">Notes</a>
+          <a href="../index.html#about">About</a>
+          <a href="../index.html#contact">Contact</a>
+        </nav>
+        <div class="header-controls">
+          <button
+            class="theme-toggle"
+            type="button"
+            aria-label="Switch to light mode"
+            aria-pressed="false">
+            <span
+              aria-hidden="true"
+              class="theme-icon">☼</span>
+          </button>
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Open menu"
+            aria-controls="site-navigation"
+            aria-expanded="false">
+            <span class="menu-label">Menu</span><span
+              aria-hidden="true"
+              class="menu-lines"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- FALLBACK: navigation remains available when JavaScript is disabled -->
+    <noscript><style>
+        .site-header {
+          position: static;
+        }
+        .header-controls {
+          display: none;
+        }
+        .site-header nav {
+          position: static;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: 8px 20px;
+          padding: 8px 0;
+          border: 0;
+          visibility: visible;
+          opacity: 1;
+          pointer-events: auto;
+        }
+        .site-header nav a {
+          border: 0;
+          padding: 8px 0;
+        }
+      </style></noscript>
+    <!-- MAIN CONTENT -->
+    <main
+      id="main"
+      tabindex="-1">
+      <!-- SECTION: Notes -->
+      <section class="research-banner shell">
+        <div
+          class="research-heading"
+          data-reveal>
+          <h1>Notes</h1>
+          <p>Notes and projects on learning, technology and the decisions behind what gets made.</p>
+        </div>
+      </section>
+      <!-- SECTION: Learning goal matcher -->
+      <section
+        aria-label="Notes"
+        class="research-cards shell">
+        <!-- NOTE CARD: Learning goal matcher -->
+        <a
+          data-reveal
+          class="research-tile resource-guide"
+          href="../learning-interactions.html"><div class="resource-card-heading">
+            <span class="research-index">Practical guide</span>
+            <h2 id="research-title-1">Learning goal matcher</h2>
+          </div>
+          <img
+            alt=""
+            decoding="async"
+            loading="lazy"
+            src="../art/concepts/goal-matcher.svg"
+            width="640"
+            height="400" />
+          <div class="research-tile-copy">
+            <p id="research-description-1">
+              A research-based guide to choosing flashcards, quizzes, branching scenarios and other
+              Articulate Storyline interactions by intended learning outcome.
+            </p>
+            <p class="research-meta">9 learning goals · 13 peer-reviewed studies</p>
+          </div></a>
+        <!-- NOTE CARD: AI, white noise and avatars -->
+        <a
+          data-reveal
+          class="research-tile resource-article"
+          href="ai-white-noise-and-avatars/index.html"><div class="resource-card-heading">
+            <span class="research-index">Article · Draft</span>
+            <h2 id="research-title-2">AI, white noise and avatars</h2>
+          </div>
+          <img
+            alt=""
+            decoding="async"
+            loading="lazy"
+            src="../art/concepts/ai-purpose.svg"
+            width="640"
+            height="400" />
+          <div class="research-tile-copy">
+            <p id="research-description-2">
+              An evidence-informed discussion of AI-generated educational content, synthetic
+              presenters and where visual polish might replace instructional purpose.
+            </p>
+            <p class="research-meta">Research note · Sources from 2025</p>
+          </div></a>
+        <!-- NOTE CARD: How authoring tools shape design -->
+        <a
+          data-reveal
+          class="research-tile resource-dissertation"
+          href="dissertation/index.html"><div class="resource-card-heading">
+            <span class="research-index">Dissertation</span>
+            <h2 id="research-title-3">How authoring tools shape design</h2>
+          </div>
+          <img
+            alt=""
+            decoding="async"
+            loading="lazy"
+            src="../art/concepts/inquiry.svg"
+            width="640"
+            height="400" />
+          <div class="research-tile-copy">
+            <p id="research-description-3">
+              Research questions, qualitative methodology and selected findings about instructional
+              designers’ software choices, constraints and professional agency.
+            </p>
+            <p class="research-meta">
+              MA Education and Technology · Exceptional Dissertation Award
+            </p>
+          </div></a>
+      </section>
+    </main>
+
+    <!-- SITE FOOTER: copyright, accessibility and back to top -->
+    <footer class="site-footer shell">
+      <span>© <span data-year>2026</span> Edit Domoszlai</span>
+      <nav
+        class="footer-links"
+        aria-label="Footer">
+        <a href="../accessibility.html">Accessibility</a>
+        <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
+      </nav>
+    </footer>
+    <!-- PAGE SCRIPTS: shared interactions and optional page features -->
+    <script
+      src="../js/site.js"
+      defer></script>
+    <script
+      src="../js/motion.js"
+      defer></script>
+  </body>
+</html>

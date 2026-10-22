@@ -1,0 +1,236 @@
+<!doctype html>
+<html
+  lang="en"
+  data-theme="dark">
+  <!-- DOCUMENT HEAD: metadata, initial theme and styles -->
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1" />
+    <script>
+      // Choose the initial theme before the page is painted.
+      (() => {
+        let t;
+        try {
+          t = localStorage.getItem('edit-portfolio-theme');
+        } catch (e) {}
+        if (t !== 'light' && t !== 'dark') {
+          const h = new Date().getHours();
+          t = h >= 7 && h < 17 ? 'light' : 'dark';
+        }
+        document.documentElement.dataset.theme = t;
+      })();
+    </script>
+    <title>Price engine process map and manual | Edit Domoszlai</title>
+    <meta
+      name="description"
+      content="Learning design, documentation, digital projects and research by Edit Domoszlai." />
+    <link
+      rel="icon"
+      href="../../favicon.svg"
+      type="image/svg+xml" />
+    <!-- STYLESHEETS: shared styles first, page styles and accessibility overrides last -->
+    <link
+      rel="stylesheet"
+      href="../../css/site.css" />
+    <link
+      rel="stylesheet"
+      href="../../css/accessibility.css" />
+  </head>
+  <body
+    id="top"
+    class="project-page">
+    <a
+      class="skip-link"
+      href="#main">Skip to content</a>
+
+    <!-- SITE HEADER: home link, main navigation and theme controls -->
+    <header class="site-header">
+      <div class="header-inner shell">
+        <a
+          class="brand"
+          href="../../index.html"
+          aria-label="Edit Domoszlai, home">Edit Domoszlai</a>
+        <nav
+          id="site-navigation"
+          aria-label="Main navigation">
+          <a
+            href="../../index.html#work"
+            aria-current="page">Work</a>
+          <a href="../../research/index.html">Notes</a>
+          <a href="../../index.html#about">About</a>
+          <a href="../../index.html#contact">Contact</a>
+        </nav>
+        <div class="header-controls">
+          <button
+            class="theme-toggle"
+            type="button"
+            aria-label="Switch to light mode"
+            aria-pressed="false">
+            <span
+              aria-hidden="true"
+              class="theme-icon">☼</span>
+          </button>
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Open menu"
+            aria-controls="site-navigation"
+            aria-expanded="false">
+            <span class="menu-label">Menu</span><span
+              aria-hidden="true"
+              class="menu-lines"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- FALLBACK: navigation remains available when JavaScript is disabled -->
+    <noscript><style>
+        .site-header {
+          position: static;
+        }
+        .header-controls {
+          display: none;
+        }
+        .site-header nav {
+          position: static;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: 8px 20px;
+          padding: 8px 0;
+          border: 0;
+          visibility: visible;
+          opacity: 1;
+          pointer-events: auto;
+        }
+        .site-header nav a {
+          border: 0;
+          padding: 8px 0;
+        }
+      </style></noscript>
+    <!-- MAIN CONTENT -->
+    <main
+      id="main"
+      tabindex="-1">
+      <div class="wrap detail">
+        <a
+          class="back-link"
+          href="../../index.html#work">← ALL PROJECTS</a>
+        <div class="detail-heading">
+          <p class="kicker">01 / BUSINESS ANALYSIS / DOCUMENTATION</p>
+          <h1>Process mapping and user manual<span class="period">.</span></h1>
+          <p class="case-lead">
+            Mapped pricing workflows across systems and created a shared user manual for Product, QA
+            and Customer Service.
+          </p>
+        </div>
+
+        <!-- PROJECT DETAILS: scope and role -->
+        <div class="case-facts">
+          <div><span>PROJECT</span><strong>Swiss aviation marketplace</strong></div>
+          <div>
+            <span>ROLE</span><strong>QA engineer · business analysis support · documentation</strong>
+          </div>
+        </div>
+
+        <!-- CASE STUDY: explanation and supporting media -->
+        <div class="case-brief">
+          <div class="case-story">
+            <!-- SECTION: Make pricing understandable -->
+            <section>
+              <span>01 / PROBLEM</span>
+              <h2>Make pricing understandable</h2>
+              <p>
+                A growing aviation marketplace needed a shared understanding of how its pricing
+                engine behaved across roles and workflows. The feature was complex, and different
+                teams needed information at different levels of detail.
+              </p>
+            </section>
+
+            <!-- SECTION: Map and explain the logic -->
+            <section>
+              <span>02 / RESPONSE</span>
+              <h2>Map and explain the logic</h2>
+              <p>
+                I investigated system behaviour, worked alongside the Business Analyst, mapped
+                workflows and translated the logic into a structured user manual with diagrams and
+                practical examples.
+              </p>
+            </section>
+
+            <!-- SECTION: One shared reference -->
+            <section>
+              <span>03 / RESULT</span>
+              <h2>One shared reference</h2>
+              <p>
+                The documentation provided a common reference for Product, Development, QA and
+                Customer Service as the feature evolved.
+              </p>
+            </section>
+          </div>
+
+          <!-- PROJECT MEDIA AND TOOLS -->
+          <div class="case-media">
+            <div class="detail-video">
+              <video
+                aria-label="Silent video: A short walkthrough of the Price Engine documentation."
+                controls=""
+                playsinline=""
+                poster="../../images/price-engine.jpg"
+                preload="none">
+                <source
+                  src="../../videos/price-engine.mp4"
+                  type="video/mp4" />
+                Your browser does not support embedded video.
+              </video>
+              <p>A short walkthrough of the Price Engine documentation.</p>
+              <details class="media-description">
+                <summary>Read a text description of the silent walkthrough</summary>
+                <p>
+                  This silent recording previews a Confluence knowledge base. It starts with a Price
+                  Engine diagram linking base price, inventory price and transaction price. It then
+                  shows a workflow diagram and the pricing manual, including sections for manual
+                  base-price upload, inventory calculations and transaction-price calculations.
+                  These views show how the process diagrams and written reference are organised.
+                </p>
+              </details>
+            </div>
+
+            <!-- SUPPORTING CONTENT: Tools & methods -->
+            <aside class="case-tools">
+              <h2 id="tools-price-engine">Tools &amp; methods</h2>
+              <ul class="tool-list">
+                <li>Confluence</li>
+                <li>Jira</li>
+                <li>workflow diagrams</li>
+                <li>manual testing</li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+
+        <!-- NEXT PROJECT -->
+        <a
+          class="next-project"
+          href="../instructional-videos/index.html"><span>NEXT PROJECT</span><strong>Marketplace instructional videos</strong><b aria-hidden="true">↗</b></a>
+      </div>
+    </main>
+
+    <!-- SITE FOOTER: copyright, accessibility and back to top -->
+    <footer class="site-footer shell">
+      <span>© <span data-year>2026</span> Edit Domoszlai</span>
+      <nav
+        class="footer-links"
+        aria-label="Footer">
+        <a href="../../accessibility.html">Accessibility</a>
+        <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
+      </nav>
+    </footer>
+    <!-- PAGE SCRIPTS: shared interactions and optional page features -->
+    <script
+      src="../../js/site.js"
+      defer></script>
+  </body>
+</html>

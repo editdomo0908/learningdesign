@@ -1,0 +1,282 @@
+<!doctype html>
+<html
+  lang="en"
+  data-theme="dark">
+  <!-- DOCUMENT HEAD: metadata, initial theme and styles -->
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1" />
+    <script>
+      // Choose the initial theme before the page is painted.
+      (() => {
+        let t;
+        try {
+          t = localStorage.getItem('edit-portfolio-theme');
+        } catch (e) {}
+        if (t !== 'light' && t !== 'dark') {
+          const h = new Date().getHours();
+          t = h >= 7 && h < 17 ? 'light' : 'dark';
+        }
+        document.documentElement.dataset.theme = t;
+      })();
+    </script>
+    <title>How authoring tools shape design | Edit Domoszlai</title>
+    <meta
+      name="description"
+      content="Learning design, documentation, digital projects and research by Edit Domoszlai." />
+    <link
+      rel="icon"
+      href="../../favicon.svg"
+      type="image/svg+xml" />
+    <!-- STYLESHEETS: shared styles first, page styles and accessibility overrides last -->
+    <link
+      rel="stylesheet"
+      href="../../css/site.css" />
+    <link
+      rel="stylesheet"
+      href="../../css/accessibility.css" />
+  </head>
+  <body
+    id="top"
+    class="article-page">
+    <a
+      class="skip-link"
+      href="#main">Skip to content</a>
+
+    <!-- SITE HEADER: home link, main navigation and theme controls -->
+    <header class="site-header">
+      <div class="header-inner shell">
+        <a
+          class="brand"
+          href="../../index.html"
+          aria-label="Edit Domoszlai, home">Edit Domoszlai</a>
+        <nav
+          id="site-navigation"
+          aria-label="Main navigation">
+          <a href="../../index.html#work">Work</a>
+          <a
+            href="../../research/index.html"
+            aria-current="page">Notes</a>
+          <a href="../../index.html#about">About</a>
+          <a href="../../index.html#contact">Contact</a>
+        </nav>
+        <div class="header-controls">
+          <button
+            class="theme-toggle"
+            type="button"
+            aria-label="Switch to light mode"
+            aria-pressed="false">
+            <span
+              aria-hidden="true"
+              class="theme-icon">☼</span>
+          </button>
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Open menu"
+            aria-controls="site-navigation"
+            aria-expanded="false">
+            <span class="menu-label">Menu</span><span
+              aria-hidden="true"
+              class="menu-lines"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- FALLBACK: navigation remains available when JavaScript is disabled -->
+    <noscript><style>
+        .site-header {
+          position: static;
+        }
+        .header-controls {
+          display: none;
+        }
+        .site-header nav {
+          position: static;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: 8px 20px;
+          padding: 8px 0;
+          border: 0;
+          visibility: visible;
+          opacity: 1;
+          pointer-events: auto;
+        }
+        .site-header nav a {
+          border: 0;
+          padding: 8px 0;
+        }
+      </style></noscript>
+    <!-- MAIN CONTENT -->
+    <main
+      id="main"
+      tabindex="-1">
+      <div class="research-shell">
+        <!-- SITE HEADER: home link, main navigation and theme controls -->
+        <header class="research-intro">
+          <a
+            class="research-back"
+            href="../index.html">← Notes</a>
+          <p class="kicker">UCL Institute of Education / MA Education and Technology</p>
+          <h1>How authoring tools shape design<span class="period">.</span></h1>
+          <p class="lead">
+            A study of instructional designers’ software choices, working methods and
+            decision-making. The dissertation received UCL’s Exceptional Dissertation Award.
+          </p>
+        </header>
+        <div class="research-content">
+          <article class="research-prose">
+            <!-- SECTION: The question -->
+            <section id="question">
+              <h2>The question</h2>
+              <p>
+                E-learning authoring tools are often described as neutral means of producing a
+                course. My dissertation asked how the tools themselves influence instructional
+                designers’ choices, what motivates the selection of a particular tool, and which
+                constraints designers encounter.
+              </p>
+            </section>
+
+            <!-- SECTION: Research approach -->
+            <section id="method">
+              <h2>Research approach</h2>
+              <p>
+                The qualitative research combined an online questionnaire with semi-structured
+                interviews: 22 questionnaire responses and four interviews. It considered why
+                designers choose certain tools and how software features and limitations influence
+                their approach.
+              </p>
+              <p class="research-small">
+                These are exploratory qualitative findings from a small, non-representative sample.
+                They should not be treated as industry-wide percentages or causal effects.
+              </p>
+            </section>
+
+            <!-- SECTION: Selected findings -->
+            <section id="findings">
+              <h2>Selected findings</h2>
+              <div class="findings-grid">
+                <div class="finding">
+                  <span class="number">01 / Tool influence</span>
+                  <h3>Tools guide what feels possible</h3>
+                  <p>
+                    Built-in interactions, features and limitations influenced design choices,
+                    rather than merely implementing plans made independently of the software.
+                  </p>
+                </div>
+                <div class="finding">
+                  <span class="number">02 / Market influence</span>
+                  <h3>Selection is not purely pedagogical</h3>
+                  <p>
+                    Tool preference, including demand for Articulate products, was shaped by client
+                    preferences and market expectations.
+                  </p>
+                </div>
+                <div class="finding">
+                  <span class="number">03 / Designer agency</span>
+                  <h3>Convenience creates a trade-off</h3>
+                  <p>
+                    The same software that speeds production may narrow the range of design
+                    approaches considered. The implication is to evaluate the tool critically.
+                  </p>
+                </div>
+                <div class="finding">
+                  <span class="number">04 / Evaluation</span>
+                  <h3>Questions after delivery</h3>
+                  <p>
+                    Interviewed designers reported limited follow-up with clients about course
+                    effectiveness. This does not establish whether clients conducted their own
+                    evaluation.
+                  </p>
+                </div>
+              </div>
+              <p>
+                Across these themes, I became interested in where decisions originate: from
+                learners' needs, from designers’ professional judgement, or from the affordances of
+                the tool selected.
+              </p>
+            </section>
+
+            <!-- SECTION: What this means for learning design -->
+            <section id="implications">
+              <h2>What this means for learning design</h2>
+              <p>
+                Templates and features can be useful starting points, but they should not define the
+                learning problem. The sequence matters: identify the outcome, choose how to practise
+                and assess it, then select the software capable of supporting that design.
+              </p>
+              <p>
+                This question continues in the
+                <a href="../../learning-interactions.html">Learning Interaction Selector</a>, which
+                maps interaction patterns to learning goals and cites peer-reviewed instructional
+                research.
+              </p>
+            </section>
+
+            <!-- SECTION: Dissertation walkthrough -->
+            <section id="video">
+              <h2>Dissertation walkthrough</h2>
+              <video
+                aria-label="Silent video: Short video walkthrough of dissertation"
+                class="research-video"
+                controls=""
+                playsinline=""
+                poster="../../images/research.jpg"
+                preload="none">
+                <source
+                  src="../../videos/research.mp4"
+                  type="video/mp4" />
+                Your browser does not support video.
+              </video>
+              <p class="research-small">Original video from the existing research case study.</p>
+              <details class="media-description">
+                <summary>Read a text description of the silent walkthrough</summary>
+                <p>
+                  This silent recording scrolls through the dissertation contents. The chapters
+                  cover a literature review, methodology, findings, discussion and conclusion. The
+                  findings are organised around designers’ backgrounds and tool use, software
+                  influence on practice, reasons for tool selection, challenges and improvements,
+                  and follow-up topics. The clip previews the document’s structure; the portfolio’s
+                  written research sections explain the findings.
+                </p>
+              </details>
+            </section>
+            <p class="research-small">
+              This page is a concise portfolio summary, based on the dissertation abstract and
+              previously shared notes. It is not the full dissertation or a new academic
+              publication; detailed quotations and any statistical claims require checking against
+              the complete text.
+            </p>
+          </article>
+          <!-- SUPPORTING CONTENT: Related navigation and resources -->
+          <aside
+            aria-label="On this page"
+            class="research-sidebar">
+            <strong>Dissertation overview</strong><a href="#question">Research question</a><a href="#method">Methods</a><a href="#findings">Findings</a><a href="#implications">Implications</a><a href="#video">Video</a>
+          </aside>
+        </div>
+        <div class="related">
+          <a href="../index.html">← All notes</a><a href="../../projects/research/index.html">Original portfolio case study →</a>
+        </div>
+      </div>
+    </main>
+
+    <!-- SITE FOOTER: copyright, accessibility and back to top -->
+    <footer class="site-footer shell">
+      <span>© <span data-year>2026</span> Edit Domoszlai</span>
+      <nav
+        class="footer-links"
+        aria-label="Footer">
+        <a href="../../accessibility.html">Accessibility</a>
+        <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
+      </nav>
+    </footer>
+    <!-- PAGE SCRIPTS: shared interactions and optional page features -->
+    <script
+      src="../../js/site.js"
+      defer></script>
+  </body>
+</html>

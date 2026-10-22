@@ -1,0 +1,85 @@
+<!-- Vector artwork: canvas settings, definitions and drawing elements. -->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 640 400">
+  <defs>
+    <pattern
+      id="feedback-grid"
+      width="32"
+      height="32"
+      patternUnits="userSpaceOnUse">
+      <path
+        d="M32 0H0V32"
+        fill="none"
+        stroke="#1e2d58"
+        stroke-opacity=".045" />
+    </pattern>
+  </defs>
+  <rect
+    width="640"
+    height="400"
+    fill="#e4ebff" />
+  <rect
+    width="640"
+    height="400"
+    fill="url(#feedback-grid)" />
+  <g transform="rotate(-7 256 172)">
+    <path
+      d="M115 81H369Q382 81 382 94V228Q382 241 369 241H207L163 276V241H115Q102 241 102 228V94Q102 81 115 81Z"
+      fill="#3e5bff"
+      opacity=".15"
+      transform="translate(-7 10)" />
+    <path
+      d="M115 81H369Q382 81 382 94V228Q382 241 369 241H207L163 276V241H115Q102 241 102 228V94Q102 81 115 81Z"
+      fill="#fff"
+      stroke="#1e2d58"
+      stroke-width="2" />
+    <circle
+      cx="139"
+      cy="123"
+      r="10"
+      fill="#ff6c88" />
+    <path
+      d="M164 122H343M135 158H343M135 186H305"
+      fill="none"
+      stroke="#1e2d58"
+      stroke-width="4"
+      stroke-linecap="round" />
+  </g>
+  <g transform="rotate(6 437 253)">
+    <path
+      d="M338 197H534Q545 197 545 208V309Q545 320 534 320H494V348L461 320H338Q327 320 327 309V208Q327 197 338 197Z"
+      fill="#00a9a0" />
+    <path
+      d="M359 232H509M359 257H490M359 282H458"
+      stroke="#fff"
+      stroke-width="4"
+      stroke-linecap="round" />
+  </g>
+  <circle
+    cx="469"
+    cy="109"
+    r="32"
+    fill="#ff6c88" />
+  <path
+    d="m454 109 10 10 20-23"
+    fill="none"
+    stroke="#fff"
+    stroke-width="4"
+    stroke-linecap="round"
+    stroke-linejoin="round" />
+  <path
+    d="M178 310C199 340 260 350 302 324"
+    fill="none"
+    stroke="#3e5bff"
+    stroke-width="3"
+    stroke-linecap="round"
+    stroke-dasharray="5 8" />
+  <path
+    d="m288 319 17 3-7 15"
+    fill="none"
+    stroke="#3e5bff"
+    stroke-width="3"
+    stroke-linecap="round"
+    stroke-linejoin="round" />
+</svg>
